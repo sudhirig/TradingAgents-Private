@@ -1,0 +1,42 @@
+{
+  "ui_validation": {
+    "page_load": true,
+    "react_app": true,
+    "components_loaded": false,
+    "styling_present": false,
+    "javascript_active": true,
+    "error": null
+  },
+  "api_integration": {
+    "backend_reachable": true,
+    "cors_configured": false,
+    "endpoints_accessible": {
+      "/health": {
+        "status": true,
+        "response_time": 0.001765
+      },
+      "/api/config/analysts": {
+        "status": true,
+        "response_time": 0.001026
+      },
+      "/api/config/llm-providers": {
+        "status": true,
+        "response_time": 0.001008
+      }
+    },
+    "error": null
+  },
+  "security_features": {
+    "cors_headers": false,
+    "security_headers": {
+      "x-content-type-options": false,
+      "x-frame-options": false,
+      "x-xss-protection": false,
+      "referrer-policy": false
+    },
+    "rate_limiting": false,
+    "input_validation": false
+  },
+  "overall_success": false,
+  "timestamp": 1756335785.922666
+}

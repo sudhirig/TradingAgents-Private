@@ -1,0 +1,271 @@
+2025-08-28 02:50:17,563 - __main__ - ERROR - ❌ Failed to setup routers: attempted relative import beyond top-level package
+2025-08-28 02:50:17,563 - __main__ - INFO - 🌐 Starting server on 0.0.0.0:8000
+2025-08-28 02:50:17,563 - __main__ - INFO - 📚 API documentation available at http://0.0.0.0:8000/docs
+2025-08-28 02:50:22,813 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-08-28 02:50:24,617 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 02:50:33,166 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 02:50:50,843 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 02:50:54,037 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 02:50:57,727 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-08-28 02:50:58,360 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-08-28 02:51:00,542 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-08-28 02:51:00,952 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-08-28 02:51:01,528 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-08-28 02:51:02,592 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-08-28 02:51:07,340 - watchfiles.main - INFO - 14 changes detected
+2025-08-28 02:51:14,005 - watchfiles.main - INFO - 1 change detected
+2025-08-28 02:51:17,486 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 02:51:19,259 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 02:51:47,021 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-08-28 02:53:12,052 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 02:53:13,248 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 02:53:18,512 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-08-28 02:53:31,475 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 02:53:33,989 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-28 02:53:37,680 - services.session_manager - INFO - Session Manager initialized (max_sessions=100, timeout=60min)
+2025-08-28 02:53:39,596 - services.websocket_manager - INFO - WebSocket Manager initialized
+2025-08-28 02:53:39,610 - __main__ - INFO - ✅ API routers configured
+2025-08-28 02:53:39,610 - __main__ - INFO - 🌐 Starting server on 0.0.0.0:8000
+2025-08-28 02:53:39,610 - __main__ - INFO - 📚 API documentation available at http://0.0.0.0:8000/docs
+2025-08-28 02:53:53,659 - services.session_manager - INFO - Session Manager initialized (max_sessions=100, timeout=60min)
+2025-08-28 02:53:55,738 - services.websocket_manager - INFO - WebSocket Manager initialized
+2025-08-28 02:53:55,749 - __main__ - INFO - ✅ API routers configured
+2025-08-28 02:53:55,749 - __main__ - INFO - 🌐 Starting server on 0.0.0.0:8000
+2025-08-28 02:53:55,749 - __main__ - INFO - 📚 API documentation available at http://0.0.0.0:8000/docs
+2025-08-28 02:53:58,011 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-08-28 02:53:59,604 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 02:54:06,621 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 02:54:24,373 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 02:54:25,801 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 02:54:33,962 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-08-28 02:54:46,863 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 02:54:49,554 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 02:55:20,014 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-08-28 02:56:22,464 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 02:56:23,647 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 02:56:28,259 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-08-28 02:56:38,161 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 02:56:38,764 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-28 02:56:50,699 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 02:56:51,357 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-28 02:57:09,153 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 02:57:09,739 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-28 02:57:19,885 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 02:57:20,406 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-28 02:57:24,119 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 02:57:33,284 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 02:57:43,080 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 02:57:52,829 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 02:57:53,511 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-28 02:58:10,596 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 02:58:10,676 - watchfiles.main - INFO - 4 changes detected
+2025-08-28 02:58:11,118 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 02:58:12,197 - watchfiles.main - INFO - 1 change detected
+2025-08-28 03:00:51,193 - watchfiles.main - INFO - 3 changes detected
+2025-08-28 03:01:22,302 - watchfiles.main - INFO - 1 change detected
+2025-08-28 03:01:25,330 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-08-28 03:01:26,738 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 03:01:29,034 - watchfiles.main - INFO - 3 changes detected
+2025-08-28 03:01:33,543 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 03:01:44,246 - watchfiles.main - INFO - 1 change detected
+2025-08-28 03:01:46,835 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 03:01:47,981 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 03:01:53,294 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-08-28 03:02:00,603 - services.session_manager - INFO - Session Manager initialized (max_sessions=100, timeout=60min)
+2025-08-28 03:02:02,607 - services.websocket_manager - INFO - WebSocket Manager initialized
+2025-08-28 03:02:02,620 - __main__ - INFO - ✅ API routers configured
+2025-08-28 03:02:02,620 - __main__ - INFO - 🌐 Starting server on 0.0.0.0:8000
+2025-08-28 03:02:02,620 - __main__ - INFO - 📚 API documentation available at http://0.0.0.0:8000/docs
+2025-08-28 03:02:03,551 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 03:02:05,979 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 03:02:19,515 - services.session_manager - INFO - Session Manager initialized (max_sessions=100, timeout=60min)
+2025-08-28 03:02:21,299 - services.websocket_manager - INFO - WebSocket Manager initialized
+2025-08-28 03:02:21,311 - __main__ - INFO - ✅ API routers configured
+2025-08-28 03:02:21,311 - __main__ - INFO - 🌐 Starting server on 0.0.0.0:8000
+2025-08-28 03:02:21,311 - __main__ - INFO - 📚 API documentation available at http://0.0.0.0:8000/docs
+2025-08-28 03:02:21,678 - services.session_manager - INFO - Session Manager initialized (max_sessions=100, timeout=60min)
+2025-08-28 03:02:23,279 - services.websocket_manager - INFO - WebSocket Manager initialized
+2025-08-28 03:02:23,290 - __mp_main__ - INFO - ✅ API routers configured
+2025-08-28 03:02:23,376 - watchfiles.main - INFO - 1 change detected
+2025-08-28 03:02:23,547 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-08-28 03:02:25,061 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 03:02:32,164 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 03:02:48,456 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 03:02:51,278 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 03:02:56,375 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-08-28 03:02:57,671 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-08-28 03:02:58,367 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-08-28 03:02:58,587 - watchfiles.main - INFO - 1 change detected
+2025-08-28 03:03:00,203 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-08-28 03:03:00,883 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-08-28 03:03:03,236 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-08-28 03:03:05,738 - services.session_manager - INFO - Session Manager initialized (max_sessions=100, timeout=60min)
+2025-08-28 03:03:07,799 - services.websocket_manager - INFO - WebSocket Manager initialized
+2025-08-28 03:03:07,812 - __main__ - INFO - ✅ API routers configured
+2025-08-28 03:03:07,813 - __main__ - INFO - 🌐 Starting server on 0.0.0.0:8001
+2025-08-28 03:03:07,813 - __main__ - INFO - 📚 API documentation available at http://0.0.0.0:8001/docs
+2025-08-28 03:03:08,126 - services.session_manager - INFO - Session Manager initialized (max_sessions=100, timeout=60min)
+2025-08-28 03:03:09,949 - services.websocket_manager - INFO - WebSocket Manager initialized
+2025-08-28 03:03:09,963 - __mp_main__ - INFO - ✅ API routers configured
+2025-08-28 03:03:10,041 - watchfiles.main - INFO - 1 change detected
+2025-08-28 03:03:10,339 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-08-28 03:03:11,786 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 03:03:16,223 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 03:03:17,990 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 03:03:18,163 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 03:03:31,181 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 03:03:34,013 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 03:03:38,731 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-08-28 03:03:38,919 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-08-28 03:03:39,541 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-08-28 03:03:39,623 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-08-28 03:03:39,810 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-08-28 03:03:49,398 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-08-28 03:03:51,936 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 03:03:53,234 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 03:04:05,016 - services.session_manager - INFO - Session Manager initialized (max_sessions=100, timeout=60min)
+2025-08-28 03:04:06,999 - services.websocket_manager - INFO - WebSocket Manager initialized
+2025-08-28 03:04:07,012 - main - INFO - ✅ API routers configured
+2025-08-28 03:04:07,013 - main - INFO - 🚀 Starting TradingAgents Web Backend
+2025-08-28 03:04:07,013 - main - INFO - ✅ Environment variables loaded
+2025-08-28 03:04:20,478 - main - INFO - 📥 GET http://localhost:8002/health - Request ID: 3d7b0738-4f69-4ca7-9aab-75e43be832e2
+2025-08-28 03:04:20,478 - main - INFO - 📤 GET http://localhost:8002/health - 200 - 0.001s - Request ID: 3d7b0738-4f69-4ca7-9aab-75e43be832e2
+2025-08-28 03:04:24,852 - main - INFO - 📥 GET http://localhost:8002/health - Request ID: a4c81bbb-5073-4f4d-a44e-b7d1079b1c3d
+2025-08-28 03:04:24,852 - main - INFO - 📤 GET http://localhost:8002/health - 200 - 0.001s - Request ID: a4c81bbb-5073-4f4d-a44e-b7d1079b1c3d
+2025-08-28 03:04:28,884 - main - INFO - 📥 GET http://localhost:8002/health - Request ID: d291b79c-963d-4288-8e85-85e1026fa4c1
+2025-08-28 03:04:28,884 - main - INFO - 📤 GET http://localhost:8002/health - 200 - 0.000s - Request ID: d291b79c-963d-4288-8e85-85e1026fa4c1
+2025-08-28 03:04:41,588 - main - INFO - 📥 GET http://localhost:8002/api/config/analysts - Request ID: fd5f4cbb-0943-4151-b38d-fb36230997d7
+2025-08-28 03:04:41,589 - main - INFO - 📤 GET http://localhost:8002/api/config/analysts - 200 - 0.001s - Request ID: fd5f4cbb-0943-4151-b38d-fb36230997d7
+2025-08-28 03:04:46,051 - main - INFO - 📥 GET http://localhost:8002/api/config/analysts - Request ID: c34b0cf6-9a39-43fa-9ab4-dd9f145aeac2
+2025-08-28 03:04:46,052 - main - INFO - 📤 GET http://localhost:8002/api/config/analysts - 200 - 0.001s - Request ID: c34b0cf6-9a39-43fa-9ab4-dd9f145aeac2
+2025-08-28 03:04:50,284 - main - INFO - 📥 GET http://localhost:8002/api/config/analysts - Request ID: d6d5eb0c-5d1e-4fc9-a4b7-60e348790c2c
+2025-08-28 03:04:50,284 - main - INFO - 📤 GET http://localhost:8002/api/config/analysts - 200 - 0.000s - Request ID: d6d5eb0c-5d1e-4fc9-a4b7-60e348790c2c
+2025-08-28 03:04:50,646 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 03:04:51,880 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 03:04:54,159 - main - INFO - 📥 GET http://localhost:8002/api/config/analysts - Request ID: 4440a61b-27ab-45b4-b18d-afb94bb6e3e6
+2025-08-28 03:04:54,160 - main - INFO - 📤 GET http://localhost:8002/api/config/analysts - 200 - 0.001s - Request ID: 4440a61b-27ab-45b4-b18d-afb94bb6e3e6
+2025-08-28 03:04:57,538 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-08-28 03:05:06,972 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 03:05:08,092 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-28 03:05:23,195 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 03:05:24,420 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-28 03:05:41,445 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 03:05:42,224 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-28 03:05:46,410 - main - INFO - 📥 GET http://localhost:8002/api/config/analysts - Request ID: 495446cc-0d5d-427d-862d-fd343a6d0b4c
+2025-08-28 03:05:46,411 - main - INFO - 📤 GET http://localhost:8002/api/config/analysts - 200 - 0.002s - Request ID: 495446cc-0d5d-427d-862d-fd343a6d0b4c
+2025-08-28 03:05:51,072 - main - INFO - 📥 GET http://localhost:8002/health - Request ID: 5b75bde2-4b06-46c3-8925-3005de0efe06
+2025-08-28 03:05:51,073 - main - INFO - 📤 GET http://localhost:8002/health - 200 - 0.000s - Request ID: 5b75bde2-4b06-46c3-8925-3005de0efe06
+2025-08-28 03:05:53,724 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 03:05:54,790 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-28 03:05:58,921 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 03:06:08,716 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 03:06:12,586 - main - INFO - 📥 GET http://localhost:8002/health - Request ID: f42c4d38-6e85-44e8-872e-f6a981bf5ceb
+2025-08-28 03:06:12,590 - main - INFO - 📤 GET http://localhost:8002/health - 200 - 0.004s - Request ID: f42c4d38-6e85-44e8-872e-f6a981bf5ceb
+2025-08-28 03:06:18,187 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 03:06:19,954 - main - INFO - 📥 GET http://localhost:8002/health - Request ID: 0fa4c6dd-0ee2-4879-89f6-5605f2baeaea
+2025-08-28 03:06:19,955 - main - INFO - 📤 GET http://localhost:8002/health - 200 - 0.001s - Request ID: 0fa4c6dd-0ee2-4879-89f6-5605f2baeaea
+2025-08-28 03:06:26,690 - main - INFO - 📥 GET http://localhost:8002/api/config/analysts - Request ID: 206f19b8-cf09-4fde-934b-b572634dd741
+2025-08-28 03:06:26,691 - main - INFO - 📤 GET http://localhost:8002/api/config/analysts - 200 - 0.001s - Request ID: 206f19b8-cf09-4fde-934b-b572634dd741
+2025-08-28 03:06:26,778 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 03:06:28,407 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-28 03:06:34,209 - main - INFO - 📥 GET http://localhost:8002/health - Request ID: aecee4af-c9b4-4163-aa6a-61a13ae3218a
+2025-08-28 03:06:34,210 - main - INFO - 📤 GET http://localhost:8002/health - 200 - 0.001s - Request ID: aecee4af-c9b4-4163-aa6a-61a13ae3218a
+2025-08-28 03:06:34,248 - main - INFO - 📥 GET http://localhost:8002/api/config/analysts - Request ID: f3b047d3-cb0e-4da8-bd26-0f1df8301eaf
+2025-08-28 03:06:34,249 - main - INFO - 📤 GET http://localhost:8002/api/config/analysts - 200 - 0.001s - Request ID: f3b047d3-cb0e-4da8-bd26-0f1df8301eaf
+2025-08-28 03:06:38,934 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 03:06:39,640 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 03:06:40,845 - watchfiles.main - INFO - 5 changes detected
+2025-08-28 03:06:40,936 - services.session_manager - INFO - Session Manager initialized (max_sessions=100, timeout=60min)
+2025-08-28 03:06:42,494 - main - INFO - 📥 GET http://localhost:8002/api/config/llm-providers - Request ID: a0cd7392-d091-4599-9078-65ad841696f4
+2025-08-28 03:06:42,494 - main - INFO - 📤 GET http://localhost:8002/api/config/llm-providers - 200 - 0.001s - Request ID: a0cd7392-d091-4599-9078-65ad841696f4
+2025-08-28 03:06:43,135 - services.websocket_manager - INFO - WebSocket Manager initialized
+2025-08-28 03:06:43,148 - __mp_main__ - INFO - ✅ API routers configured
+2025-08-28 03:06:43,224 - watchfiles.main - INFO - 1 change detected
+2025-08-28 03:06:43,420 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-08-28 03:06:44,957 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 03:06:51,787 - main - INFO - 📥 GET http://localhost:8002/health - Request ID: 36495e95-045c-4663-9b57-3535dd3f67d3
+2025-08-28 03:06:51,787 - main - INFO - 📤 GET http://localhost:8002/health - 200 - 0.000s - Request ID: 36495e95-045c-4663-9b57-3535dd3f67d3
+2025-08-28 03:06:51,820 - main - INFO - 📥 GET http://localhost:8002/api/config/analysts - Request ID: 15faade0-aea1-4e8a-b02d-bc49780c2ae4
+2025-08-28 03:06:51,820 - main - INFO - 📤 GET http://localhost:8002/api/config/analysts - 200 - 0.000s - Request ID: 15faade0-aea1-4e8a-b02d-bc49780c2ae4
+2025-08-28 03:06:51,850 - main - INFO - 📥 GET http://localhost:8002/api/config/llm-providers - Request ID: 604ca9c3-4e02-4c59-b751-97d447f9dea8
+2025-08-28 03:06:51,851 - main - INFO - 📤 GET http://localhost:8002/api/config/llm-providers - 200 - 0.000s - Request ID: 604ca9c3-4e02-4c59-b751-97d447f9dea8
+2025-08-28 03:06:52,398 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 03:07:06,310 - main - INFO - 📥 GET http://localhost:8002/api/analysis/ - Request ID: 5a9b15b4-a3d9-4f37-a3d6-69057b181229
+2025-08-28 03:07:06,311 - services.session_manager - INFO - Session Manager started
+2025-08-28 03:07:06,312 - main - INFO - 📤 GET http://localhost:8002/api/analysis/ - 200 - 0.001s - Request ID: 5a9b15b4-a3d9-4f37-a3d6-69057b181229
+2025-08-28 03:07:06,543 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 03:07:09,765 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 03:07:13,405 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-08-28 03:07:15,537 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-08-28 03:07:15,941 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-08-28 03:07:16,472 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-08-28 03:07:17,457 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-08-28 03:07:17,648 - main - INFO - 📥 GET http://localhost:8002/ws/stats - Request ID: 1b7bf19c-2996-4dfc-a357-04898f67dd85
+2025-08-28 03:07:17,650 - services.websocket_manager - INFO - WebSocket Manager background tasks started
+2025-08-28 03:07:17,650 - main - INFO - 📤 GET http://localhost:8002/ws/stats - 200 - 0.005s - Request ID: 1b7bf19c-2996-4dfc-a357-04898f67dd85
+2025-08-28 03:07:23,104 - main - INFO - 📥 GET http://localhost:8002/docs - Request ID: 1328f911-b50a-46bd-b727-ad60011a78de
+2025-08-28 03:07:23,105 - main - INFO - 📤 GET http://localhost:8002/docs - 200 - 0.001s - Request ID: 1328f911-b50a-46bd-b727-ad60011a78de
+2025-08-28 03:07:32,850 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 03:07:35,205 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 03:08:03,284 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-08-28 03:08:19,633 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 03:08:20,850 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 03:08:43,959 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-08-28 03:08:53,320 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 03:08:54,412 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-28 03:09:09,351 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 03:09:09,941 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-28 03:09:26,610 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 03:09:27,205 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-28 03:09:36,411 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 03:09:38,044 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-28 03:09:40,122 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 03:09:48,100 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 03:09:56,248 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 03:10:05,680 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 03:10:06,461 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-28 03:10:18,770 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 03:10:18,864 - watchfiles.main - INFO - 1 change detected
+2025-08-28 03:10:19,524 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-28 03:10:20,019 - watchfiles.main - INFO - 1 change detected
+2025-08-28 03:16:10,608 - services.session_manager - INFO - Session Manager initialized (max_sessions=100, timeout=60min)
+2025-08-28 03:16:13,608 - services.websocket_manager - INFO - WebSocket Manager initialized
+2025-08-28 03:16:13,621 - main - INFO - ✅ API routers configured
+2025-08-28 03:16:13,621 - main - INFO - 🚀 Starting TradingAgents Web Backend
+2025-08-28 03:16:13,621 - main - INFO - ✅ Environment variables loaded
+2025-08-28 03:16:29,835 - main - INFO - 📥 GET http://localhost:8003/health - Request ID: 80d19038-cbf7-47a6-a293-e9486fe8df48
+2025-08-28 03:16:29,836 - main - INFO - 📤 GET http://localhost:8003/health - 200 - 0.001s - Request ID: 80d19038-cbf7-47a6-a293-e9486fe8df48
+2025-08-28 03:16:36,506 - main - INFO - 📥 GET http://localhost:8003/api/config/analysts - Request ID: bb849730-b86b-4bbe-8ffd-9a274ebdbb77
+2025-08-28 03:16:36,507 - main - INFO - 📤 GET http://localhost:8003/api/config/analysts - 200 - 0.001s - Request ID: bb849730-b86b-4bbe-8ffd-9a274ebdbb77
+2025-08-28 03:16:46,127 - main - INFO - 📥 GET http://localhost:8003/health - Request ID: d4b5a90a-840c-4b5b-8183-ef66d1b88497
+2025-08-28 03:16:46,127 - main - INFO - 📤 GET http://localhost:8003/health - 200 - 0.001s - Request ID: d4b5a90a-840c-4b5b-8183-ef66d1b88497
+2025-08-28 03:16:46,169 - main - INFO - 📥 GET http://localhost:8003/api/config/analysts - Request ID: ce6b43d4-40b8-475f-bf11-9f7198f7616e
+2025-08-28 03:16:46,169 - main - INFO - 📤 GET http://localhost:8003/api/config/analysts - 200 - 0.001s - Request ID: ce6b43d4-40b8-475f-bf11-9f7198f7616e
+2025-08-28 03:16:46,200 - main - INFO - 📥 GET http://localhost:8003/api/config/llm-providers - Request ID: cec75a5f-9097-48a6-a47a-ccea24fc7eef
+2025-08-28 03:16:46,200 - main - INFO - 📤 GET http://localhost:8003/api/config/llm-providers - 200 - 0.000s - Request ID: cec75a5f-9097-48a6-a47a-ccea24fc7eef
+2025-08-28 03:16:56,648 - main - INFO - 📥 GET http://localhost:8003/api/analysis/ - Request ID: 741543ac-27da-4292-9484-c4fb1a11ad60
+2025-08-28 03:16:56,649 - services.session_manager - INFO - Session Manager started
+2025-08-28 03:16:56,649 - main - INFO - 📤 GET http://localhost:8003/api/analysis/ - 200 - 0.001s - Request ID: 741543ac-27da-4292-9484-c4fb1a11ad60
+2025-08-28 03:16:56,683 - main - INFO - 📥 GET http://localhost:8003/ws/stats - Request ID: b72448e2-45aa-4b80-a42f-eb6aa38c23e4
+2025-08-28 03:16:56,683 - services.websocket_manager - INFO - WebSocket Manager background tasks started
+2025-08-28 03:16:56,683 - main - INFO - 📤 GET http://localhost:8003/ws/stats - 200 - 0.000s - Request ID: b72448e2-45aa-4b80-a42f-eb6aa38c23e4
+2025-08-28 03:17:05,803 - main - INFO - 📥 GET http://localhost:8003/docs - Request ID: e01ba73b-1554-4d96-ba40-33831ec01b9d
+2025-08-28 03:17:05,804 - main - INFO - 📤 GET http://localhost:8003/docs - 200 - 0.001s - Request ID: e01ba73b-1554-4d96-ba40-33831ec01b9d
+2025-08-28 03:19:44,993 - main - INFO - 📥 GET http://localhost:8003/health - Request ID: debf893d-510a-4f5c-b111-bb9c64f6e452
+2025-08-28 03:19:44,995 - main - INFO - 📤 GET http://localhost:8003/health - 200 - 0.002s - Request ID: debf893d-510a-4f5c-b111-bb9c64f6e452
+2025-08-28 03:19:54,494 - main - INFO - 📥 GET http://localhost:8003/api/config/analysts - Request ID: 2b55b0d6-8118-4786-b29b-401edc68a086
+2025-08-28 03:19:54,495 - main - INFO - 📤 GET http://localhost:8003/api/config/analysts - 200 - 0.001s - Request ID: 2b55b0d6-8118-4786-b29b-401edc68a086
+2025-08-28 03:20:04,656 - main - INFO - 📥 GET http://localhost:8003/api/config/llm-providers - Request ID: 4ac40980-21cc-4997-9c11-35f4d0b4ff78
+2025-08-28 03:20:04,657 - main - INFO - 📤 GET http://localhost:8003/api/config/llm-providers - 200 - 0.001s - Request ID: 4ac40980-21cc-4997-9c11-35f4d0b4ff78
+2025-08-28 03:20:16,335 - main - INFO - 📥 GET http://localhost:8003/api/config/llm-providers - Request ID: 5b373e0c-4bff-4315-8e26-d82ec2239a19
+2025-08-28 03:20:16,335 - main - INFO - 📤 GET http://localhost:8003/api/config/llm-providers - 200 - 0.001s - Request ID: 5b373e0c-4bff-4315-8e26-d82ec2239a19
+2025-08-28 03:20:22,127 - main - INFO - 📥 GET http://localhost:8003/api/analysis/ - Request ID: d9222742-bc74-4f35-8e26-03c9b08c70b9
+2025-08-28 03:20:22,129 - main - INFO - 📤 GET http://localhost:8003/api/analysis/ - 200 - 0.001s - Request ID: d9222742-bc74-4f35-8e26-03c9b08c70b9
+2025-08-28 03:20:27,282 - main - INFO - 📥 GET http://localhost:8003/api/analysis/ - Request ID: 49511a85-26a7-4073-924f-b728d3fe8808
+2025-08-28 03:20:27,282 - main - INFO - 📤 GET http://localhost:8003/api/analysis/ - 200 - 0.000s - Request ID: 49511a85-26a7-4073-924f-b728d3fe8808
+2025-08-28 03:21:11,628 - main - INFO - 📥 GET http://localhost:8003/ - Request ID: 9102d089-c2eb-42bb-97e5-04bfa76f3f0b
+2025-08-28 03:21:11,630 - main - INFO - 📤 GET http://localhost:8003/ - 200 - 0.002s - Request ID: 9102d089-c2eb-42bb-97e5-04bfa76f3f0b
+2025-08-28 03:21:11,685 - main - INFO - 📥 GET http://localhost:8003/favicon.ico - Request ID: dc73798f-004f-4807-a3bb-0b4a9323d78b
+2025-08-28 03:21:11,686 - main - INFO - 📤 GET http://localhost:8003/favicon.ico - 404 - 0.001s - Request ID: dc73798f-004f-4807-a3bb-0b4a9323d78b
+2025-08-28 03:21:24,372 - main - INFO - 📥 GET http://localhost:8003/?vscodeBrowserReqId=1756331484365 - Request ID: 109b30d7-9b6f-407d-a05c-4e09d3db8f7b
+2025-08-28 03:21:24,375 - main - INFO - 📤 GET http://localhost:8003/?vscodeBrowserReqId=1756331484365 - 200 - 0.003s - Request ID: 109b30d7-9b6f-407d-a05c-4e09d3db8f7b

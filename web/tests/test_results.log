@@ -1,0 +1,68 @@
+2025-08-28 07:08:53,111 - __main__ - INFO - 🚀 Starting Comprehensive Test Suite
+2025-08-28 07:08:53,111 - __main__ - INFO - 
+🧪 Running: Backend Health
+2025-08-28 07:08:53,119 - __main__ - INFO - ✅ Backend Health Check: Backend is healthy - TradingAgents Minimal Backend (0.01s)
+2025-08-28 07:08:53,119 - __main__ - INFO - 
+🧪 Running: Configuration Endpoints
+2025-08-28 07:08:53,120 - __main__ - INFO - ✅ Get Analysts: Retrieved 4 items (0.00s)
+2025-08-28 07:08:53,121 - __main__ - INFO - ✅ Get LLM Providers: Retrieved 3 items (0.00s)
+2025-08-28 07:08:53,122 - __main__ - INFO - ✅ Get OpenAI Models: Retrieved 2 items (0.00s)
+2025-08-28 07:08:53,122 - __main__ - INFO - 
+🧪 Running: Analysis Workflow
+2025-08-28 07:08:53,124 - __main__ - INFO - ✅ Analysis Workflow: Analysis started successfully - Session: 86c438df-eafd-4f3f-858d-9b6b842abc0d (0.00s)
+2025-08-28 07:08:53,124 - __main__ - INFO - 
+🧪 Running: Frontend Accessibility
+2025-08-28 07:08:53,131 - __main__ - INFO - ❌ Frontend Accessibility: Missing elements: ['Analysis Configuration', 'Ticker Symbol', 'Research Depth', 'LLM Provider'] (0.01s)
+2025-08-28 07:08:53,131 - __main__ - INFO - 
+🧪 Running: WebSocket Connection
+2025-08-28 07:08:53,133 - __main__ - ERROR - WebSocket error: Handshake status 403 Forbidden -+-+- {'date': 'Thu, 28 Aug 2025 01:38:53 GMT', 'content-length': '0', 'content-type': 'text/plain', 'connection': 'close'} -+-+- b''
+2025-08-28 07:08:53,133 - websocket - ERROR - Handshake status 403 Forbidden -+-+- {'date': 'Thu, 28 Aug 2025 01:38:53 GMT', 'content-length': '0', 'content-type': 'text/plain', 'connection': 'close'} -+-+- b'' - goodbye
+2025-08-28 07:08:53,133 - __main__ - INFO - ✅ WebSocket Connection: WebSocket connection successful (0.00s)
+2025-08-28 07:08:53,134 - __main__ - INFO - 
+🧪 Running: Business Logic Validation
+2025-08-28 07:08:53,135 - __main__ - INFO - ✅ Invalid Ticker: Correctly rejected invalid data
+2025-08-28 07:08:53,135 - __main__ - INFO - ✅ Future Date: Correctly rejected invalid data
+2025-08-28 07:08:53,136 - __main__ - INFO - ✅ Invalid Analyst: Correctly rejected invalid data
+2025-08-28 07:08:53,137 - __main__ - INFO - ✅ Valid Request: Valid request accepted
+2025-08-28 07:08:53,137 - __main__ - INFO - ✅ Business Logic Validation: Tested 4 validation scenarios (0.00s)
+2025-08-28 07:08:53,137 - __main__ - INFO - 
+📊 TEST SUMMARY
+2025-08-28 07:08:53,137 - __main__ - INFO - Total Tests: 6
+2025-08-28 07:08:53,137 - __main__ - INFO - Passed: 5 ✅
+2025-08-28 07:08:53,137 - __main__ - INFO - Failed: 1 ❌
+2025-08-28 07:08:53,137 - __main__ - INFO - Success Rate: 83.3%
+2025-08-28 07:08:53,137 - __main__ - INFO - Total Duration: 0.03s
+2025-08-28 07:11:03,808 - __main__ - INFO - 🚀 Starting Comprehensive Test Suite
+2025-08-28 07:11:03,808 - __main__ - INFO - 
+🧪 Running: Backend Health
+2025-08-28 07:11:03,817 - __main__ - INFO - ✅ Backend Health Check: Backend is healthy - TradingAgents Minimal Backend (0.01s)
+2025-08-28 07:11:03,817 - __main__ - INFO - 
+🧪 Running: Configuration Endpoints
+2025-08-28 07:11:03,818 - __main__ - INFO - ✅ Get Analysts: Retrieved 4 items (0.00s)
+2025-08-28 07:11:03,819 - __main__ - INFO - ✅ Get LLM Providers: Retrieved 3 items (0.00s)
+2025-08-28 07:11:03,820 - __main__ - INFO - ✅ Get OpenAI Models: Retrieved 2 items (0.00s)
+2025-08-28 07:11:03,820 - __main__ - INFO - 
+🧪 Running: Analysis Workflow
+2025-08-28 07:11:03,822 - __main__ - INFO - ✅ Analysis Workflow: Analysis started successfully - Session: 5e9cfa05-b7f3-48af-8c03-847ec9387587 (0.00s)
+2025-08-28 07:11:03,822 - __main__ - INFO - 
+🧪 Running: Frontend Accessibility
+2025-08-28 07:11:03,833 - __main__ - INFO - ❌ Frontend Accessibility: Missing elements: ['Analysis Configuration', 'Ticker Symbol', 'Research Depth', 'LLM Provider'] (0.01s)
+2025-08-28 07:11:03,833 - __main__ - INFO - 
+🧪 Running: WebSocket Connection
+2025-08-28 07:11:03,837 - __main__ - ERROR - WebSocket error: Handshake status 403 Forbidden -+-+- {'date': 'Thu, 28 Aug 2025 01:41:03 GMT', 'content-length': '0', 'content-type': 'text/plain', 'connection': 'close'} -+-+- b''
+2025-08-28 07:11:03,837 - websocket - ERROR - Handshake status 403 Forbidden -+-+- {'date': 'Thu, 28 Aug 2025 01:41:03 GMT', 'content-length': '0', 'content-type': 'text/plain', 'connection': 'close'} -+-+- b'' - goodbye
+2025-08-28 07:11:03,837 - __main__ - INFO - ✅ WebSocket Connection: WebSocket connection successful (0.00s)
+2025-08-28 07:11:03,837 - __main__ - INFO - 
+🧪 Running: Business Logic Validation
+2025-08-28 07:11:03,839 - __main__ - INFO - ✅ Invalid Ticker: Correctly rejected invalid data
+2025-08-28 07:11:03,841 - __main__ - INFO - ✅ Future Date: Correctly rejected invalid data
+2025-08-28 07:11:03,843 - __main__ - INFO - ✅ Invalid Analyst: Correctly rejected invalid data
+2025-08-28 07:11:03,844 - __main__ - INFO - ✅ Valid Request: Valid request accepted
+2025-08-28 07:11:03,844 - __main__ - INFO - ✅ Business Logic Validation: Tested 4 validation scenarios (0.01s)
+2025-08-28 07:11:03,844 - __main__ - INFO - 
+📊 TEST SUMMARY
+2025-08-28 07:11:03,844 - __main__ - INFO - Total Tests: 6
+2025-08-28 07:11:03,844 - __main__ - INFO - Passed: 5 ✅
+2025-08-28 07:11:03,844 - __main__ - INFO - Failed: 1 ❌
+2025-08-28 07:11:03,844 - __main__ - INFO - Success Rate: 83.3%
+2025-08-28 07:11:03,844 - __main__ - INFO - Total Duration: 0.04s

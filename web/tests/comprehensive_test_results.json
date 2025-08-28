@@ -1,0 +1,58 @@
+{
+  "total_tests": 6,
+  "passed": 5,
+  "failed": 1,
+  "success_rate": 83.33333333333334,
+  "total_duration": 0.03573298454284668,
+  "timestamp": "2025-08-28T07:11:03.844096",
+  "results": [
+    {
+      "test_name": "Backend Health Check",
+      "status": "PASS",
+      "message": "Backend is healthy - TradingAgents Minimal Backend",
+      "duration": 0.008994102478027344
+    },
+    {
+      "test_name": "Get Analysts",
+      "status": "PASS",
+      "message": "Retrieved 4 items",
+      "duration": 0.0011417865753173828
+    },
+    {
+      "test_name": "Get LLM Providers",
+      "status": "PASS",
+      "message": "Retrieved 3 items",
+      "duration": 0.0008099079132080078
+    },
+    {
+      "test_name": "Get OpenAI Models",
+      "status": "PASS",
+      "message": "Retrieved 2 items",
+      "duration": 0.0006589889526367188
+    },
+    {
+      "test_name": "Analysis Workflow",
+      "status": "PASS",
+      "message": "Analysis started successfully - Session: 5e9cfa05-b7f3-48af-8c03-847ec9387587",
+      "duration": 0.001634836196899414
+    },
+    {
+      "test_name": "Frontend Accessibility",
+      "status": "FAIL",
+      "message": "Missing elements: ['Analysis Configuration', 'Ticker Symbol', 'Research Depth', 'LLM Provider']",
+      "duration": 0.011052131652832031
+    },
+    {
+      "test_name": "WebSocket Connection",
+      "status": "PASS",
+      "message": "WebSocket connection successful",
+      "duration": 0.0040051937103271484
+    },
+    {
+      "test_name": "Business Logic Validation",
+      "status": "PASS",
+      "message": "Tested 4 validation scenarios",
+      "duration": 0.0060579776763916016
+    }
+  ]
+}

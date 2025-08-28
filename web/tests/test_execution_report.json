@@ -1,0 +1,20 @@
+{
+  "timestamp": "2025-08-28T01:41:03Z",
+  "total_suites": 5,
+  "passed": 1,
+  "failed": 4,
+  "success_rate": 20,
+  "environment": {
+    "backend_url": "http://localhost:8001",
+    "frontend_url": "http://localhost:5173",
+    "python_version": "Python 3.10.18",
+    "platform": "Darwin"
+  },
+  "test_suites": [
+    {"name": "Backend API Tests", "status": "PASS"},
+    {"name": "Frontend UI Tests", "status": "FAIL"},
+    {"name": "Integration Tests", "status": "FAIL"},
+    {"name": "Manual Verification", "status": "FAIL"},
+    {"name": "Business Logic", "status": "FAIL"}
+  ]
+}

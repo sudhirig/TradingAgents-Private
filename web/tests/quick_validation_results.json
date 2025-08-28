@@ -1,0 +1,42 @@
+{
+  "backend": {
+    "health": {
+      "status": true,
+      "response": {
+        "status": "healthy",
+        "service": "TradingAgents Web Backend",
+        "version": "1.0.0",
+        "timestamp": "2025-08-28T04:30:21.242579"
+      }
+    },
+    "docs": {
+      "status": true
+    }
+  },
+  "api_endpoints": {
+    "/api/config/analysts": {
+      "status": true,
+      "data_length": 3
+    },
+    "/api/config/llm-providers": {
+      "status": true,
+      "data_length": 2
+    }
+  },
+  "websocket": {
+    "connection": true,
+    "messages_received": 5,
+    "demo_messages": false,
+    "error": null
+  },
+  "frontend": {
+    "accessibility": {
+      "status": true,
+      "has_react": true,
+      "has_root_div": true
+    }
+  },
+  "duration": 5.056085824966431,
+  "timestamp": 1756335626.289744,
+  "overall_success": true
+}

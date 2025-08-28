@@ -1,0 +1,88 @@
+{
+  "connection_established": true,
+  "messages_received": [
+    {
+      "type": "connected",
+      "session_id": "demo-test-1756335688",
+      "timestamp": "2025-08-28T04:31:28.618441",
+      "data": {
+        "message": "WebSocket connected successfully"
+      }
+    },
+    {
+      "type": "agent_status",
+      "session_id": "demo-test-1756335688",
+      "timestamp": "2025-08-28T04:31:30.618984",
+      "data": {
+        "agent_name": "Market Analyst",
+        "status": "running",
+        "progress": 30,
+        "current_task": "Analyzing market analyst data..."
+      }
+    },
+    {
+      "type": "message",
+      "session_id": "demo-test-1756335688",
+      "timestamp": "2025-08-28T04:31:30.619169",
+      "data": {
+        "agent": "Market Analyst",
+        "message_type": "info",
+        "content": "Market Analyst is processing market data for analysis...",
+        "timestamp": "2025-08-28T04:31:30.619174"
+      }
+    },
+    {
+      "type": "agent_status",
+      "session_id": "demo-test-1756335688",
+      "timestamp": "2025-08-28T04:31:32.620254",
+      "data": {
+        "agent_name": "Social Analyst",
+        "status": "running",
+        "progress": 60,
+        "current_task": "Analyzing social analyst data..."
+      }
+    },
+    {
+      "type": "message",
+      "session_id": "demo-test-1756335688",
+      "timestamp": "2025-08-28T04:31:32.620371",
+      "data": {
+        "agent": "Social Analyst",
+        "message_type": "info",
+        "content": "Social Analyst is processing market data for analysis...",
+        "timestamp": "2025-08-28T04:31:32.620374"
+      }
+    },
+    {
+      "type": "agent_status",
+      "session_id": "demo-test-1756335688",
+      "timestamp": "2025-08-28T04:31:34.621776",
+      "data": {
+        "agent_name": "Fundamentals Analyst",
+        "status": "running",
+        "progress": 90,
+        "current_task": "Analyzing fundamentals analyst data..."
+      }
+    },
+    {
+      "type": "message",
+      "session_id": "demo-test-1756335688",
+      "timestamp": "2025-08-28T04:31:34.621891",
+      "data": {
+        "agent": "Fundamentals Analyst",
+        "message_type": "info",
+        "content": "Fundamentals Analyst is processing market data for analysis...",
+        "timestamp": "2025-08-28T04:31:34.621894"
+      }
+    }
+  ],
+  "agent_status_updates": 0,
+  "message_updates": 0,
+  "unique_agents": [],
+  "message_types": [
+    "message",
+    "agent_status",
+    "connected"
+  ],
+  "duration": 10.042411088943481
+}

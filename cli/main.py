@@ -1,24 +1,32 @@
 from typing import Optional
 import datetime
-import typer
+import sys
+import os
 from pathlib import Path
 from functools import wraps
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+import load_env  # Load .env file
+
+import typer
 from rich.console import Console
+from rich.layout import Layout
 from rich.panel import Panel
-from rich.spinner import Spinner
+from rich.text import Text
+from rich.table import Table
 from rich.live import Live
 from rich.columns import Columns
-from rich.markdown import Markdown
-from rich.layout import Layout
-from rich.text import Text
-from rich.live import Live
-from rich.table import Table
-from collections import deque
-import time
-from rich.tree import Tree
-from rich import box
 from rich.align import Align
-from rich.rule import Rule
+from rich.padding import Padding
+from rich import box
+from rich.spinner import Spinner
+from rich.markdown import Markdown
+import questionary
+from datetime import datetime
+import time
+import threading
+from collections import defaultdict, deque
+import json
+from typing import Dict, Any, List, Optional
 
 from tradingagents.graph.trading_graph import TradingAgentsGraph
 from tradingagents.default_config import DEFAULT_CONFIG
@@ -72,11 +80,11 @@ class MessageBuffer:
         }
 
     def add_message(self, message_type, content):
-        timestamp = datetime.datetime.now().strftime("%H:%M:%S")
+        timestamp = datetime.now().strftime("%H:%M:%S")
         self.messages.append((timestamp, message_type, content))
 
     def add_tool_call(self, tool_name, args):
-        timestamp = datetime.datetime.now().strftime("%H:%M:%S")
+        timestamp = datetime.now().strftime("%H:%M:%S")
         self.tool_calls.append((timestamp, tool_name, args))
 
     def update_agent_status(self, agent, status):
@@ -434,7 +442,7 @@ def get_user_selections():
     selected_ticker = get_ticker()
 
     # Step 2: Analysis date
-    default_date = datetime.datetime.now().strftime("%Y-%m-%d")
+    default_date = datetime.now().strftime("%Y-%m-%d")
     console.print(
         create_question_box(
             "Step 2: Analysis Date",
@@ -501,12 +509,12 @@ def get_analysis_date():
     """Get the analysis date from user input."""
     while True:
         date_str = typer.prompt(
-            "", default=datetime.datetime.now().strftime("%Y-%m-%d")
+            "", default=datetime.now().strftime("%Y-%m-%d")
         )
         try:
             # Validate date format and ensure it's not in the future
-            analysis_date = datetime.datetime.strptime(date_str, "%Y-%m-%d")
-            if analysis_date.date() > datetime.datetime.now().date():
+            analysis_date = datetime.strptime(date_str, "%Y-%m-%d")
+            if analysis_date.date() > datetime.now().date():
                 console.print("[red]Error: Analysis date cannot be in the future[/red]")
                 continue
             return date_str

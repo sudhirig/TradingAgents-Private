@@ -1,0 +1,99 @@
+{
+  "summary": {
+    "total": 5,
+    "passed": 1,
+    "failed": 4,
+    "skipped": 0,
+    "duration": 34.927729845047,
+    "webdriver_available": true
+  },
+  "results": [
+    {
+      "test_name": "Page Load",
+      "status": "FAIL",
+      "message": "Page load failed: Message: unknown error: net::ERR_CONNECTION_REFUSED\n  (Session info: chrome=139.0.7258.139)\nStacktrace:\n0   chromedriver                        0x0000000100712e00 cxxbridge1$str$ptr + 2742224\n1   chromedriver                        0x000000010070ad00 cxxbridge1$str$ptr + 2709200\n2   chromedriver                        0x00000001002550b8 cxxbridge1$string$len + 90520\n3   chromedriver                        0x000000010024d540 cxxbridge1$string$len + 58912\n4   chromedriver                        0x00000001002401d0 cxxbridge1$string$len + 4784\n5   chromedriver                        0x0000000100241bd0 cxxbridge1$string$len + 11440\n6   chromedriver                        0x0000000100240624 cxxbridge1$string$len + 5892\n7   chromedriver                        0x000000010023ff78 cxxbridge1$string$len + 4184\n8   chromedriver                        0x000000010023fcc4 cxxbridge1$string$len + 3492\n9   chromedriver                        0x000000010023da7c chromedriver + 203388\n10  chromedriver                        0x000000010023e4d8 chromedriver + 206040\n11  chromedriver                        0x000000010025811c cxxbridge1$string$len + 102908\n12  chromedriver                        0x00000001002de414 cxxbridge1$string$len + 652532\n13  chromedriver                        0x00000001002dd980 cxxbridge1$string$len + 649824\n14  chromedriver                        0x00000001002908f4 cxxbridge1$string$len + 334292\n15  chromedriver                        0x00000001006d6478 cxxbridge1$str$ptr + 2494024\n16  chromedriver                        0x00000001006d96a4 cxxbridge1$str$ptr + 2506868\n17  chromedriver                        0x00000001006b73b0 cxxbridge1$str$ptr + 2366848\n18  chromedriver                        0x00000001006d9f4c cxxbridge1$str$ptr + 2509084\n19  chromedriver                        0x00000001006a84a8 cxxbridge1$str$ptr + 2305656\n20  chromedriver                        0x00000001006f9644 cxxbridge1$str$ptr + 2637844\n21  chromedriver                        0x00000001006f97d0 cxxbridge1$str$ptr + 2638240\n22  chromedriver                        0x000000010070a94c cxxbridge1$str$ptr + 2708252\n23  libsystem_pthread.dylib             0x000000019a5d3c0c _pthread_start + 136\n24  libsystem_pthread.dylib             0x000000019a5ceb80 thread_start + 8\n",
+      "timestamp": "2025-08-28T07:34:43.638267",
+      "details": {}
+    },
+    {
+      "test_name": "Configuration Form",
+      "status": "FAIL",
+      "message": "Form interaction failed: Message: \nStacktrace:\n0   chromedriver                        0x0000000100712e00 cxxbridge1$str$ptr + 2742224\n1   chromedriver                        0x000000010070ad00 cxxbridge1$str$ptr + 2709200\n2   chromedriver                        0x00000001002550b8 cxxbridge1$string$len + 90520\n3   chromedriver                        0x000000010029c5d8 cxxbridge1$string$len + 382648\n4   chromedriver                        0x00000001002dd980 cxxbridge1$string$len + 649824\n5   chromedriver                        0x00000001002908f4 cxxbridge1$string$len + 334292\n6   chromedriver                        0x00000001006d6478 cxxbridge1$str$ptr + 2494024\n7   chromedriver                        0x00000001006d96a4 cxxbridge1$str$ptr + 2506868\n8   chromedriver                        0x00000001006b73b0 cxxbridge1$str$ptr + 2366848\n9   chromedriver                        0x00000001006d9f4c cxxbridge1$str$ptr + 2509084\n10  chromedriver                        0x00000001006a84a8 cxxbridge1$str$ptr + 2305656\n11  chromedriver                        0x00000001006f9644 cxxbridge1$str$ptr + 2637844\n12  chromedriver                        0x00000001006f97d0 cxxbridge1$str$ptr + 2638240\n13  chromedriver                        0x000000010070a94c cxxbridge1$str$ptr + 2708252\n14  libsystem_pthread.dylib             0x000000019a5d3c0c _pthread_start + 136\n15  libsystem_pthread.dylib             0x000000019a5ceb80 thread_start + 8\n",
+      "timestamp": "2025-08-28T07:34:53.666395",
+      "details": {}
+    },
+    {
+      "test_name": "Start Analysis Button",
+      "status": "FAIL",
+      "message": "Button test failed: Message: \nStacktrace:\n0   chromedriver                        0x0000000100712e00 cxxbridge1$str$ptr + 2742224\n1   chromedriver                        0x000000010070ad00 cxxbridge1$str$ptr + 2709200\n2   chromedriver                        0x00000001002550b8 cxxbridge1$string$len + 90520\n3   chromedriver                        0x000000010029c5d8 cxxbridge1$string$len + 382648\n4   chromedriver                        0x00000001002dd980 cxxbridge1$string$len + 649824\n5   chromedriver                        0x00000001002908f4 cxxbridge1$string$len + 334292\n6   chromedriver                        0x00000001006d6478 cxxbridge1$str$ptr + 2494024\n7   chromedriver                        0x00000001006d96a4 cxxbridge1$str$ptr + 2506868\n8   chromedriver                        0x00000001006b73b0 cxxbridge1$str$ptr + 2366848\n9   chromedriver                        0x00000001006d9f4c cxxbridge1$str$ptr + 2509084\n10  chromedriver                        0x00000001006a84a8 cxxbridge1$str$ptr + 2305656\n11  chromedriver                        0x00000001006f9644 cxxbridge1$str$ptr + 2637844\n12  chromedriver                        0x00000001006f97d0 cxxbridge1$str$ptr + 2638240\n13  chromedriver                        0x000000010070a94c cxxbridge1$str$ptr + 2708252\n14  libsystem_pthread.dylib             0x000000019a5d3c0c _pthread_start + 136\n15  libsystem_pthread.dylib             0x000000019a5ceb80 thread_start + 8\n",
+      "timestamp": "2025-08-28T07:35:03.694421",
+      "details": {}
+    },
+    {
+      "test_name": "Responsive Design",
+      "status": "PASS",
+      "message": "Layout works correctly on all 3 screen sizes",
+      "timestamp": "2025-08-28T07:35:07.132628",
+      "details": {
+        "tested_sizes": [
+          {
+            "device": "Desktop",
+            "size": "1920x1080",
+            "body_size": {
+              "height": 414,
+              "width": 1904
+            },
+            "horizontal_scroll": false
+          },
+          {
+            "device": "Tablet",
+            "size": "1024x768",
+            "body_size": {
+              "height": 413,
+              "width": 1008
+            },
+            "horizontal_scroll": false
+          },
+          {
+            "device": "Mobile",
+            "size": "375x667",
+            "body_size": {
+              "height": 334,
+              "width": 500
+            },
+            "horizontal_scroll": false
+          }
+        ]
+      }
+    },
+    {
+      "test_name": "Accessibility Features",
+      "status": "FAIL",
+      "message": "1 accessibility issues found",
+      "timestamp": "2025-08-28T07:35:17.193107",
+      "details": {
+        "passed": [
+          {
+            "check": "Form Labels",
+            "total_inputs": 0,
+            "labeled_inputs": 0,
+            "pass": true
+          },
+          {
+            "check": "Heading Structure",
+            "total_headings": 1,
+            "pass": true
+          }
+        ],
+        "failed": [
+          {
+            "check": "Image Alt Text",
+            "total_images": 2,
+            "images_with_alt": 0,
+            "pass": false
+          }
+        ]
+      }
+    }
+  ]
+}

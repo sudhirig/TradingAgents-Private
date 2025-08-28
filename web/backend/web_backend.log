@@ -1,0 +1,74 @@
+2025-08-28 03:00:51,094 - app.main - INFO - 📥 GET http://testserver/health - Request ID: 7af349b1-50f1-40b1-ab3d-b0569857beed
+2025-08-28 03:00:51,094 - app.main - INFO - 📤 GET http://testserver/health - 400 - 0.000s - Request ID: 7af349b1-50f1-40b1-ab3d-b0569857beed
+2025-08-28 03:00:51,095 - httpx - INFO - HTTP Request: GET http://testserver/health "HTTP/1.1 400 Bad Request"
+2025-08-28 03:01:08,641 - app.main - INFO - 📥 GET http://testserver/health - Request ID: 7e58a611-a318-4b7c-9170-77dd7f57e876
+2025-08-28 03:01:08,641 - app.main - INFO - 📤 GET http://testserver/health - 400 - 0.000s - Request ID: 7e58a611-a318-4b7c-9170-77dd7f57e876
+2025-08-28 03:01:08,642 - httpx - INFO - HTTP Request: GET http://testserver/health "HTTP/1.1 400 Bad Request"
+2025-08-28 03:01:08,642 - app.main - INFO - 📥 GET http://testserver/ - Request ID: 2c37ced1-f46e-4316-b697-076662e15253
+2025-08-28 03:01:08,642 - app.main - INFO - 📤 GET http://testserver/ - 400 - 0.000s - Request ID: 2c37ced1-f46e-4316-b697-076662e15253
+2025-08-28 03:01:08,643 - httpx - INFO - HTTP Request: GET http://testserver/ "HTTP/1.1 400 Bad Request"
+2025-08-28 03:01:08,643 - app.main - INFO - 📥 GET http://testserver/api/config/analysts - Request ID: 2093e010-9c8d-48d1-97cd-2b3afec421e7
+2025-08-28 03:01:08,643 - app.main - INFO - 📤 GET http://testserver/api/config/analysts - 400 - 0.000s - Request ID: 2093e010-9c8d-48d1-97cd-2b3afec421e7
+2025-08-28 03:01:08,644 - httpx - INFO - HTTP Request: GET http://testserver/api/config/analysts "HTTP/1.1 400 Bad Request"
+2025-08-28 03:01:08,644 - app.main - INFO - 📥 GET http://testserver/api/config/llm-providers - Request ID: 30184307-43ab-4263-a9f1-524fade744e5
+2025-08-28 03:01:08,644 - app.main - INFO - 📤 GET http://testserver/api/config/llm-providers - 400 - 0.000s - Request ID: 30184307-43ab-4263-a9f1-524fade744e5
+2025-08-28 03:01:08,645 - httpx - INFO - HTTP Request: GET http://testserver/api/config/llm-providers "HTTP/1.1 400 Bad Request"
+2025-08-28 03:01:08,645 - app.main - INFO - 📥 GET http://testserver/api/config/ - Request ID: c8613784-6a45-4f0e-8343-34ab6f5c7cd2
+2025-08-28 03:01:08,645 - app.main - INFO - 📤 GET http://testserver/api/config/ - 400 - 0.000s - Request ID: c8613784-6a45-4f0e-8343-34ab6f5c7cd2
+2025-08-28 03:01:08,646 - httpx - INFO - HTTP Request: GET http://testserver/api/config/ "HTTP/1.1 400 Bad Request"
+2025-08-28 03:01:28,966 - app.main - INFO - 📥 GET http://testserver/health - Request ID: b9e9bc32-cade-44ae-8ba3-0dc6930d0443
+2025-08-28 03:01:28,966 - app.main - INFO - 📤 GET http://testserver/health - 200 - 0.001s - Request ID: b9e9bc32-cade-44ae-8ba3-0dc6930d0443
+2025-08-28 03:01:28,967 - httpx - INFO - HTTP Request: GET http://testserver/health "HTTP/1.1 200 OK"
+2025-08-28 03:01:28,968 - app.main - INFO - 📥 GET http://testserver/ - Request ID: 83440c31-2d5b-46cc-966f-0a566ffd20fe
+2025-08-28 03:01:28,968 - app.main - INFO - 📤 GET http://testserver/ - 200 - 0.000s - Request ID: 83440c31-2d5b-46cc-966f-0a566ffd20fe
+2025-08-28 03:01:28,968 - httpx - INFO - HTTP Request: GET http://testserver/ "HTTP/1.1 200 OK"
+2025-08-28 03:01:28,969 - app.main - INFO - 📥 GET http://testserver/api/config/analysts - Request ID: 4701bd08-d171-4754-82a4-98e498c02e91
+2025-08-28 03:01:28,969 - app.main - INFO - 📤 GET http://testserver/api/config/analysts - 404 - 0.000s - Request ID: 4701bd08-d171-4754-82a4-98e498c02e91
+2025-08-28 03:01:28,969 - httpx - INFO - HTTP Request: GET http://testserver/api/config/analysts "HTTP/1.1 404 Not Found"
+2025-08-28 03:01:28,970 - app.main - INFO - 📥 GET http://testserver/api/config/llm-providers - Request ID: fd039e52-8254-47c4-bcfc-91e05147f860
+2025-08-28 03:01:28,970 - app.main - INFO - 📤 GET http://testserver/api/config/llm-providers - 404 - 0.000s - Request ID: fd039e52-8254-47c4-bcfc-91e05147f860
+2025-08-28 03:01:28,970 - httpx - INFO - HTTP Request: GET http://testserver/api/config/llm-providers "HTTP/1.1 404 Not Found"
+2025-08-28 03:01:28,970 - app.main - INFO - 📥 GET http://testserver/api/config/ - Request ID: bb5ad281-dd4d-4757-b65d-4abfff85e7e6
+2025-08-28 03:01:28,971 - app.main - INFO - 📤 GET http://testserver/api/config/ - 404 - 0.000s - Request ID: bb5ad281-dd4d-4757-b65d-4abfff85e7e6
+2025-08-28 03:01:28,971 - httpx - INFO - HTTP Request: GET http://testserver/api/config/ "HTTP/1.1 404 Not Found"
+2025-08-28 03:01:50,908 - services.session_manager - INFO - Session Manager initialized (max_sessions=100, timeout=60min)
+2025-08-28 03:01:53,073 - services.websocket_manager - INFO - WebSocket Manager initialized
+2025-08-28 03:01:53,085 - app.main - INFO - ✅ API routers configured
+2025-08-28 03:01:53,088 - app.main - INFO - 📥 GET http://testserver/health - Request ID: 04f573ac-7aaa-405c-8da6-78c0d25d44e3
+2025-08-28 03:01:53,089 - app.main - INFO - 📤 GET http://testserver/health - 200 - 0.000s - Request ID: 04f573ac-7aaa-405c-8da6-78c0d25d44e3
+2025-08-28 03:01:53,089 - httpx - INFO - HTTP Request: GET http://testserver/health "HTTP/1.1 200 OK"
+2025-08-28 03:01:53,090 - app.main - INFO - 📥 GET http://testserver/ - Request ID: 2efb006b-1b7f-4f8e-809c-f96610023bc4
+2025-08-28 03:01:53,090 - app.main - INFO - 📤 GET http://testserver/ - 200 - 0.000s - Request ID: 2efb006b-1b7f-4f8e-809c-f96610023bc4
+2025-08-28 03:01:53,091 - httpx - INFO - HTTP Request: GET http://testserver/ "HTTP/1.1 200 OK"
+2025-08-28 03:01:53,091 - app.main - INFO - 📥 GET http://testserver/api/config/analysts - Request ID: a159511f-5761-47df-a118-fe6db36169d2
+2025-08-28 03:01:53,091 - app.main - INFO - 📤 GET http://testserver/api/config/analysts - 200 - 0.000s - Request ID: a159511f-5761-47df-a118-fe6db36169d2
+2025-08-28 03:01:53,092 - httpx - INFO - HTTP Request: GET http://testserver/api/config/analysts "HTTP/1.1 200 OK"
+2025-08-28 03:01:53,092 - app.main - INFO - 📥 GET http://testserver/api/config/llm-providers - Request ID: 535354c5-9de6-416c-9913-7c9f3db5a61f
+2025-08-28 03:01:53,093 - app.main - INFO - 📤 GET http://testserver/api/config/llm-providers - 200 - 0.000s - Request ID: 535354c5-9de6-416c-9913-7c9f3db5a61f
+2025-08-28 03:01:53,093 - httpx - INFO - HTTP Request: GET http://testserver/api/config/llm-providers "HTTP/1.1 200 OK"
+2025-08-28 03:01:53,093 - app.main - INFO - 📥 GET http://testserver/api/config/ - Request ID: 0026fb69-0f92-4621-a1fd-10da571fb158
+2025-08-28 03:01:53,094 - app.main - INFO - 📤 GET http://testserver/api/config/ - 200 - 0.001s - Request ID: 0026fb69-0f92-4621-a1fd-10da571fb158
+2025-08-28 03:01:53,094 - httpx - INFO - HTTP Request: GET http://testserver/api/config/ "HTTP/1.1 200 OK"
+2025-08-28 03:56:52,372 - app.main - ERROR - ❌ Failed to setup routers: No module named 'routers'
+2025-08-28 03:56:52,372 - app.main - INFO - 🚀 Starting TradingAgents Web Backend
+2025-08-28 03:56:52,372 - app.main - INFO - ✅ Environment variables loaded
+2025-08-28 03:57:24,712 - app.main - INFO - 🛑 Shutting down TradingAgents Web Backend
+2025-08-28 03:57:25,231 - app.main - ERROR - ❌ Failed to setup routers: No module named 'models'
+2025-08-28 03:57:25,232 - app.main - INFO - 🚀 Starting TradingAgents Web Backend
+2025-08-28 03:57:25,232 - app.main - INFO - ✅ Environment variables loaded
+2025-08-28 03:57:43,727 - app.main - INFO - 🛑 Shutting down TradingAgents Web Backend
+2025-08-28 03:57:44,208 - app.main - ERROR - ❌ Failed to setup routers: No module named 'models'
+2025-08-28 03:57:44,208 - app.main - INFO - 🚀 Starting TradingAgents Web Backend
+2025-08-28 03:57:44,208 - app.main - INFO - ✅ Environment variables loaded
+2025-08-28 03:57:56,839 - app.main - INFO - 🛑 Shutting down TradingAgents Web Backend
+2025-08-28 03:57:57,465 - app.main - ERROR - ❌ Failed to setup routers: cannot import name 'AnalysisSessionResponse' from 'app.models.analysis' (/Users/Gautam/TradingAgents/web/backend/app/models/analysis.py)
+2025-08-28 03:57:57,466 - app.main - INFO - 🚀 Starting TradingAgents Web Backend
+2025-08-28 03:57:57,466 - app.main - INFO - ✅ Environment variables loaded
+2025-08-28 03:58:06,704 - app.main - INFO - 🛑 Shutting down TradingAgents Web Backend
+2025-08-28 03:58:07,188 - app.main - ERROR - ❌ Failed to setup routers: cannot import name 'AnalysisSessionResponse' from 'app.models.analysis' (/Users/Gautam/TradingAgents/web/backend/app/models/analysis.py)
+2025-08-28 03:58:07,188 - app.main - INFO - 🚀 Starting TradingAgents Web Backend
+2025-08-28 03:58:07,188 - app.main - INFO - ✅ Environment variables loaded
+2025-08-28 03:58:12,862 - app.main - INFO - 🛑 Shutting down TradingAgents Web Backend
+2025-08-28 03:58:13,271 - app.main - ERROR - ❌ Failed to setup routers: cannot import name 'AnalysisSessionResponse' from 'app.models.analysis' (/Users/Gautam/TradingAgents/web/backend/app/models/analysis.py)
+2025-08-28 03:58:13,271 - app.main - INFO - 🚀 Starting TradingAgents Web Backend
+2025-08-28 03:58:13,271 - app.main - INFO - ✅ Environment variables loaded

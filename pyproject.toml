@@ -25,10 +25,12 @@ dependencies = [
     "redis>=6.2.0",
     "requests>=2.32.4",
     "rich>=14.0.0",
+    "selenium>=4.35.0",
     "setuptools>=80.9.0",
     "stockstats>=0.6.5",
     "tqdm>=4.67.1",
     "tushare>=1.4.21",
     "typing-extensions>=4.14.0",
+    "webdriver-manager>=4.0.2",
     "yfinance>=0.2.63",
 ]
