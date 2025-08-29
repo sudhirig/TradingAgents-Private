@@ -1,0 +1,425 @@
+[
+  {
+    "timestamp": "2025-08-30T01:12:01.653917",
+    "test_name": "Health Check",
+    "success": true,
+    "details": "Status: 200",
+    "response_data": {
+      "status": "healthy",
+      "timestamp": "2025-08-30T01:12:01.648764"
+    }
+  },
+  {
+    "timestamp": "2025-08-30T01:12:01.657505",
+    "test_name": "CORS Preflight - http://localhost:3000",
+    "success": true,
+    "details": "Status: 200, Headers: {'date': 'Fri, 29 Aug 2025 19:42:00 GMT', 'server': 'uvicorn', 'vary': 'Origin', 'access-control-allow-methods': 'DELETE, GET, HEAD, OPTIONS, PATCH, POST, PUT', 'access-control-max-age': '600', 'access-control-allow-credentials': 'true', 'access-control-allow-origin': 'http://localhost:3000', 'access-control-allow-headers': 'Content-Type', 'content-length': '2', 'content-type': 'text/plain; charset=utf-8'}",
+    "response_data": null
+  },
+  {
+    "timestamp": "2025-08-30T01:12:01.659923",
+    "test_name": "CORS Preflight - http://127.0.0.1:3000",
+    "success": true,
+    "details": "Status: 200, Headers: {'date': 'Fri, 29 Aug 2025 19:42:00 GMT', 'server': 'uvicorn', 'vary': 'Origin', 'access-control-allow-methods': 'DELETE, GET, HEAD, OPTIONS, PATCH, POST, PUT', 'access-control-max-age': '600', 'access-control-allow-credentials': 'true', 'access-control-allow-origin': 'http://127.0.0.1:3000', 'access-control-allow-headers': 'Content-Type', 'content-length': '2', 'content-type': 'text/plain; charset=utf-8'}",
+    "response_data": null
+  },
+  {
+    "timestamp": "2025-08-30T01:12:01.664412",
+    "test_name": "CORS Preflight - http://localhost:5173",
+    "success": true,
+    "details": "Status: 200, Headers: {'date': 'Fri, 29 Aug 2025 19:42:00 GMT', 'server': 'uvicorn', 'vary': 'Origin', 'access-control-allow-methods': 'DELETE, GET, HEAD, OPTIONS, PATCH, POST, PUT', 'access-control-max-age': '600', 'access-control-allow-credentials': 'true', 'access-control-allow-origin': 'http://localhost:5173', 'access-control-allow-headers': 'Content-Type', 'content-length': '2', 'content-type': 'text/plain; charset=utf-8'}",
+    "response_data": null
+  },
+  {
+    "timestamp": "2025-08-30T01:12:01.667295",
+    "test_name": "CORS Preflight - http://127.0.0.1:8080",
+    "success": true,
+    "details": "Status: 200, Headers: {'date': 'Fri, 29 Aug 2025 19:42:00 GMT', 'server': 'uvicorn', 'vary': 'Origin', 'access-control-allow-methods': 'DELETE, GET, HEAD, OPTIONS, PATCH, POST, PUT', 'access-control-max-age': '600', 'access-control-allow-credentials': 'true', 'access-control-allow-origin': 'http://127.0.0.1:8080', 'access-control-allow-headers': 'Content-Type', 'content-length': '2', 'content-type': 'text/plain; charset=utf-8'}",
+    "response_data": null
+  },
+  {
+    "timestamp": "2025-08-30T01:12:18.089579",
+    "test_name": "Strategy Generation - Case 1",
+    "success": true,
+    "details": "Generated 2203 chars of code",
+    "response_data": {
+      "success": true,
+      "code": "```python\nimport backtrader as bt\n\nclass MovingAverageCrossover(bt.Strategy):\n    params = (\n        ('fast_length', 10),\n        ('slow_length', 50),\n        ('printlog', False),\n    )\n\n    def log(self, txt, dt=None, doprint=False):\n        if self.params.printlog or doprint:\n            dt = dt or self.datas[0].datetime.date(0)\n            print(f'{dt.isoformat()}, {txt}')\n\n    def __init__(self):\n        self.dataclose = self.datas[0].close\n        self.order = None\n        self.buyprice = None\n        self.buycomm = None\n\n        self.fast_sma = bt.indicators.SimpleMovingAverage(\n            self.datas[0], period=self.params.fast_length)\n        self.slow_sma = bt.indicators.SimpleMovingAverage(\n            self.datas[0], period=self.params.slow_length)\n\n    def notify_order(self, order):\n        if order.status in [order.Submitted, order.Accepted]:\n            return\n\n        if order.status in [order.Completed]:\n            if order.isbuy():\n                self.log(\n                    f'BUY EXECUTED, Price: {order.executed.price:.2f}, Cost: {order.executed.value:.2f}, Comm {order.executed.comm:.2f}')\n                self.buyprice = order.executed.price\n                self.buycomm = order.executed.comm\n            else:\n                self.log(\n                    f'SELL EXECUTED, Price: {order.executed.price:.2f}, Cost: {order.executed.value:.2f}, Comm {order.executed.comm:.2f}')\n\n        elif order.status in [order.Canceled, order.Margin, order.Rejected]:\n            self.log('Order Canceled/Margin/Rejected')\n\n        self.order = None\n\n    def next(self):\n        if self.order:\n            return\n\n        if not self.position:\n            if self.fast_sma[0] > self.slow_sma[0]:\n                self.log(f'BUY CREATE, {self.dataclose[0]:.2f}')\n                self.order = self.buy()\n        else:\n            if self.fast_sma[0] < self.slow_sma[0]:\n                self.log(f'SELL CREATE, {self.dataclose[0]:.2f}')\n                self.order = self.sell()\n\n    def stop(self):\n        self.log('(Fast Length %2d, Slow Length %2d) Ending Value %.2f' %\n                 (self.params.fast_length, self.params.slow_length, self.broker.getvalue()), doprint=True)\n```",
+      "ideas_remaining": 2
+    }
+  },
+  {
+    "timestamp": "2025-08-30T01:12:38.899869",
+    "test_name": "Strategy Generation - Case 2",
+    "success": true,
+    "details": "Generated 2255 chars of code",
+    "response_data": {
+      "success": true,
+      "code": "```python\nimport backtrader as bt\n\nclass RsiBollingerStrategy(bt.Strategy):\n    params = (\n        ('period', 14),\n        ('rsi_low', 30),\n        ('rsi_high', 70),\n        ('bband1', 20),\n        ('bband2', 2),\n        ('size', 100),\n        ('stop_loss', 0.02),\n        ('take_profit', 0.06),\n        ('printlog', False),\n    )\n\n    def log(self, txt, dt=None, doprint=False):\n        if self.params.printlog or doprint:\n            dt = dt or self.datas[0].datetime.date(0)\n            print(f'{dt.isoformat()}, {txt}')\n\n    def __init__(self):\n        self.rsi = bt.indicators.RSI_SMA(self.data.close, period=self.params.period)\n        self.bband = bt.indicators.BollingerBands(self.data.close, period=self.params.bband1, devfactor=self.params.bband2)\n        self.order = None\n\n    def notify_order(self, order):\n        if order.status in [order.Submitted, order.Accepted]:\n            return\n        if order.status in [order.Completed]:\n            if order.isbuy():\n                self.log(f'BUY EXECUTED, {order.executed.price}')\n            elif order.issell():\n                self.log(f'SELL EXECUTED, {order.executed.price}')\n        elif order.status in [order.Canceled, order.Margin, order.Rejected]:\n            self.log('Order Canceled/Margin/Rejected')\n        self.order = None\n\n    def next(self):\n        if self.order:\n            return\n        if not self.position:\n            if self.rsi < self.params.rsi_low and self.data.close < self.bband.lines.bot:\n                self.order = self.buy(size=self.params.size)\n                self.log(f'BUY CREATE, {self.data.close[0]}')\n        else:\n            if self.rsi > self.params.rsi_high or self.data.close > self.bband.lines.top:\n                self.order = self.sell(size=self.params.size)\n                self.log(f'SELL CREATE, {self.data.close[0]}')\n\n    def stop(self):\n        self.log('(RSI Period %2d) Ending Value %.2f' %\n                 (self.params.period, self.broker.getvalue()), doprint=True)\n\n\nif __name__ == '__main__':\n    cerebro = bt.Cerebro()\n    cerebro.addstrategy(RsiBollingerStrategy)\n    data = bt.feeds.YahooFinanceData(dataname='TSLA', fromdate=datetime(2017, 1, 1), todate=datetime(2022, 12, 31))\n    cerebro.adddata(data)\n    cerebro.run()\n```",
+      "ideas_remaining": 1
+    }
+  },
+  {
+    "timestamp": "2025-08-30T01:12:52.121892",
+    "test_name": "Strategy Generation - Case 3",
+    "success": true,
+    "details": "Generated 1961 chars of code",
+    "response_data": {
+      "success": true,
+      "code": "```python\nimport backtrader as bt\n\nclass MeanReversionStrategy(bt.Strategy):\n    params = (\n        ('macd1', 12),\n        ('macd2', 26),\n        ('macdsig', 9),\n        ('stop_loss', 0.02),\n        ('take_profit', 0.04),\n        ('sizer', 0.1),\n    )\n\n    def log(self, txt, dt=None):\n        dt = dt or self.datas[0].datetime.date(0)\n        print(f'{dt.isoformat()}, {txt}')\n\n    def __init__(self):\n        self.macd = bt.indicators.MACD(self.data.close,\n                                       period_me1=self.p.macd1,\n                                       period_me2=self.p.macd2,\n                                       period_signal=self.p.macdsig)\n        self.order = None\n\n    def notify_order(self, order):\n        if order.status in [order.Submitted, order.Accepted]:\n            return\n\n        if order.status in [order.Completed]:\n            if order.isbuy():\n                self.log(f'BUY EXECUTED, {order.executed.price}')\n            elif order.issell():\n                self.log(f'SELL EXECUTED, {order.executed.price}')\n\n        self.order = None\n\n    def next(self):\n        if self.order:\n            return\n\n        if not self.position:\n            if self.macd > 0:\n                self.order = self.buy()\n                self.log(f'BUY CREATE, {self.data.close[0]}')\n        else:\n            if self.macd < 0:\n                self.order = self.sell()\n                self.log(f'SELL CREATE, {self.data.close[0]}')\n\n    def stop(self):\n        self.log(f'(MACD Params {self.params.macd1}, {self.params.macd2}, {self.params.macdsig}) Ending Value {self.broker.getvalue()}')\n\nif __name__ == '__main__':\n    cerebro = bt.Cerebro()\n    cerebro.addstrategy(MeanReversionStrategy)\n    data = bt.feeds.YahooFinanceData(dataname='MSFT', fromdate=datetime(2011, 1, 1), todate=datetime(2022, 12, 31))\n    cerebro.adddata(data)\n    cerebro.broker.setcash(100000.0)\n    cerebro.addsizer(bt.sizers.PercentSizer, percents=10)\n    cerebro.run()\n```",
+      "ideas_remaining": 0
+    }
+  },
+  {
+    "timestamp": "2025-08-30T01:13:01.242859",
+    "test_name": "Basic Backtest - AAPL",
+    "success": true,
+    "details": "Return: 0.42%, Sharpe: 0.000, Trades: 1",
+    "response_data": {
+      "success": true,
+      "backtest_results": {
+        "final_value": 10041.66,
+        "initial_value": 10000.0,
+        "total_return": 0.42,
+        "total_return_pct": "0.42%",
+        "pnl": 41.66,
+        "sharpe_ratio": 0,
+        "max_drawdown": 0.06,
+        "max_drawdown_pct": "0.06%",
+        "volatility": 0.12,
+        "win_rate": 0.0,
+        "total_trades": 1,
+        "winning_trades": 0,
+        "losing_trades": 1
+      },
+      "performance_metrics": {
+        "total_return": 0.42,
+        "sharpe_ratio": 0,
+        "max_drawdown": 0.06,
+        "win_rate": 0.0,
+        "total_trades": 1,
+        "volatility": 0.12,
+        "calmar_ratio": 6.872,
+        "sortino_ratio": 0
+      },
+      "summary": {
+        "initial_value": 10000.0,
+        "final_value": 10041.66,
+        "ending_value": 10041.66,
+        "symbol_used": "AAPL",
+        "data_points": 124,
+        "period": "2023-01-01 to 2023-06-30",
+        "duration_days": 124
+      }
+    }
+  },
+  {
+    "timestamp": "2025-08-30T01:13:07.262765",
+    "test_name": "Basic Backtest - TSLA",
+    "success": true,
+    "details": "Return: 0.00%, Sharpe: 0.000, Trades: 0",
+    "response_data": {
+      "success": true,
+      "backtest_results": {
+        "final_value": 10000.0,
+        "initial_value": 10000.0,
+        "total_return": 0.0,
+        "total_return_pct": "0.0%",
+        "pnl": 0.0,
+        "sharpe_ratio": 0,
+        "max_drawdown": 0,
+        "max_drawdown_pct": "0%",
+        "volatility": 0.12,
+        "win_rate": 0,
+        "total_trades": 0,
+        "winning_trades": 0,
+        "losing_trades": 0
+      },
+      "performance_metrics": {
+        "total_return": 0.0,
+        "sharpe_ratio": 0,
+        "max_drawdown": 0,
+        "win_rate": 0,
+        "total_trades": 0,
+        "volatility": 0.12,
+        "calmar_ratio": 0,
+        "sortino_ratio": 0
+      },
+      "summary": {
+        "initial_value": 10000.0,
+        "final_value": 10000.0,
+        "ending_value": 10000.0,
+        "symbol_used": "TSLA",
+        "data_points": 124,
+        "period": "2023-01-01 to 2023-06-30",
+        "duration_days": 124
+      }
+    }
+  },
+  {
+    "timestamp": "2025-08-30T01:13:13.284966",
+    "test_name": "Basic Backtest - MSFT",
+    "success": true,
+    "details": "Return: 0.00%, Sharpe: 0.000, Trades: 0",
+    "response_data": {
+      "success": true,
+      "backtest_results": {
+        "final_value": 10000.0,
+        "initial_value": 10000.0,
+        "total_return": 0.0,
+        "total_return_pct": "0.0%",
+        "pnl": 0.0,
+        "sharpe_ratio": 0,
+        "max_drawdown": 0,
+        "max_drawdown_pct": "0%",
+        "volatility": 0.12,
+        "win_rate": 0,
+        "total_trades": 0,
+        "winning_trades": 0,
+        "losing_trades": 0
+      },
+      "performance_metrics": {
+        "total_return": 0.0,
+        "sharpe_ratio": 0,
+        "max_drawdown": 0,
+        "win_rate": 0,
+        "total_trades": 0,
+        "volatility": 0.12,
+        "calmar_ratio": 0,
+        "sortino_ratio": 0
+      },
+      "summary": {
+        "initial_value": 10000.0,
+        "final_value": 10000.0,
+        "ending_value": 10000.0,
+        "symbol_used": "MSFT",
+        "data_points": 124,
+        "period": "2023-01-01 to 2023-06-30",
+        "duration_days": 124
+      }
+    }
+  },
+  {
+    "timestamp": "2025-08-30T01:13:15.685012",
+    "test_name": "Advanced Backtest - AAPL",
+    "success": true,
+    "details": "Return: 0.00%, Sharpe: 0.000, Analyzers: 15",
+    "response_data": {
+      "success": true,
+      "performance_metrics": {
+        "total_return": 0.0,
+        "sharpe_ratio": 0,
+        "sortino_ratio": 0,
+        "calmar_ratio": 0,
+        "max_drawdown": 0,
+        "max_drawdown_period": 0,
+        "avg_drawdown": 0,
+        "win_rate": 0,
+        "total_trades": 0,
+        "winning_trades": 0,
+        "losing_trades": 0,
+        "avg_win": 0,
+        "avg_loss": 0,
+        "profit_factor": 0,
+        "annual_return": 0.0,
+        "volatility": 0.0,
+        "vwr": 0,
+        "sqn": 0,
+        "best_day": 0,
+        "worst_day": 0
+      },
+      "summary": {
+        "initial_value": 10000.0,
+        "final_value": 10000.0,
+        "symbol_used": "AAPL",
+        "data_points": 124,
+        "commission": 0.001,
+        "slippage": 0.0005
+      },
+      "advanced_features": {
+        "analyzers_count": 15,
+        "data_source": "yfinance + Alpha Vantage fallback",
+        "realistic_costs": true,
+        "professional_metrics": true
+      }
+    }
+  },
+  {
+    "timestamp": "2025-08-30T01:13:19.106121",
+    "test_name": "Advanced Backtest - TSLA",
+    "success": false,
+    "details": "Missing required fields in response",
+    "response_data": {
+      "success": false,
+      "error": "Strategy code error: ('Received response with content-encoding: gzip, but failed to decode it.', error('Error -3 while decompressing data: incorrect header check'))"
+    }
+  },
+  {
+    "timestamp": "2025-08-30T01:13:22.388109",
+    "test_name": "Advanced Backtest - MSFT",
+    "success": false,
+    "details": "Missing required fields in response",
+    "response_data": {
+      "success": false,
+      "error": "Strategy code error: ('Received response with content-encoding: gzip, but failed to decode it.', error('Error -3 while decompressing data: incorrect header check'))"
+    }
+  },
+  {
+    "timestamp": "2025-08-30T01:13:28.104519",
+    "test_name": "Fenced Code - Basic Backtest",
+    "success": true,
+    "details": "Basic backtest with fences: 200",
+    "response_data": {
+      "success": true,
+      "backtest_results": {
+        "final_value": 10000.0,
+        "initial_value": 10000.0,
+        "total_return": 0.0,
+        "total_return_pct": "0.0%",
+        "pnl": 0.0,
+        "sharpe_ratio": 0,
+        "max_drawdown": 0,
+        "max_drawdown_pct": "0%",
+        "volatility": 0.12,
+        "win_rate": 0,
+        "total_trades": 0,
+        "winning_trades": 0,
+        "losing_trades": 0
+      },
+      "performance_metrics": {
+        "total_return": 0.0,
+        "sharpe_ratio": 0,
+        "max_drawdown": 0,
+        "win_rate": 0,
+        "total_trades": 0,
+        "volatility": 0.12,
+        "calmar_ratio": 0,
+        "sortino_ratio": 0
+      },
+      "summary": {
+        "initial_value": 10000.0,
+        "final_value": 10000.0,
+        "ending_value": 10000.0,
+        "symbol_used": "AAPL",
+        "data_points": 62,
+        "period": "2023-01-01 to 2023-03-31",
+        "duration_days": 62
+      }
+    }
+  },
+  {
+    "timestamp": "2025-08-30T01:13:30.636877",
+    "test_name": "Fenced Code - Advanced Backtest",
+    "success": true,
+    "details": "Advanced backtest with fences: 200",
+    "response_data": {
+      "success": true,
+      "performance_metrics": {
+        "total_return": 0.0,
+        "sharpe_ratio": 0,
+        "sortino_ratio": 0,
+        "calmar_ratio": 0,
+        "max_drawdown": 0,
+        "max_drawdown_period": 0,
+        "avg_drawdown": 0,
+        "win_rate": 0,
+        "total_trades": 0,
+        "winning_trades": 0,
+        "losing_trades": 0,
+        "avg_win": 0,
+        "avg_loss": 0,
+        "profit_factor": 0,
+        "annual_return": 0.0,
+        "volatility": 0.0,
+        "vwr": 0,
+        "sqn": 0,
+        "best_day": 0,
+        "worst_day": 0
+      },
+      "summary": {
+        "initial_value": 10000.0,
+        "final_value": 10000.0,
+        "symbol_used": "AAPL",
+        "data_points": 62,
+        "commission": 0.001,
+        "slippage": 0.0005
+      },
+      "advanced_features": {
+        "analyzers_count": 15,
+        "data_source": "yfinance + Alpha Vantage fallback",
+        "realistic_costs": true,
+        "professional_metrics": true
+      }
+    }
+  },
+  {
+    "timestamp": "2025-08-30T01:13:35.238825",
+    "test_name": "Error Handling - Invalid Symbol",
+    "success": true,
+    "details": "Proper error handling: Unable to download market data for INVALID_SYMBOL_...",
+    "response_data": null
+  },
+  {
+    "timestamp": "2025-08-30T01:13:44.237742",
+    "test_name": "Error Handling - Invalid Date Range",
+    "success": true,
+    "details": "Proper error handling: Unable to download market data for AAPL. Yahoo Fin...",
+    "response_data": null
+  },
+  {
+    "timestamp": "2025-08-30T01:13:49.283021",
+    "test_name": "Error Handling - Malformed Code",
+    "success": true,
+    "details": "Proper error handling: Unable to download market data for AAPL. Yahoo Fin...",
+    "response_data": null
+  },
+  {
+    "timestamp": "2025-08-30T01:13:49.326989",
+    "test_name": "Error Handling - Missing Required Field",
+    "success": true,
+    "details": "HTTP error code 500 as expected",
+    "response_data": null
+  },
+  {
+    "timestamp": "2025-08-30T01:13:49.471300",
+    "test_name": "Endpoint - /api/indicators",
+    "success": false,
+    "details": "Exception: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))",
+    "response_data": null
+  },
+  {
+    "timestamp": "2025-08-30T01:13:49.492193",
+    "test_name": "Endpoint - /api/indicators/advanced",
+    "success": true,
+    "details": "Returned 4062 chars of data",
+    "response_data": null
+  },
+  {
+    "timestamp": "2025-08-30T01:13:49.503566",
+    "test_name": "Endpoint - /api/market-data",
+    "success": true,
+    "details": "Returned 788 chars of data",
+    "response_data": null
+  },
+  {
+    "timestamp": "2025-08-30T01:13:49.510116",
+    "test_name": "Endpoint - /api/orders/types",
+    "success": true,
+    "details": "Returned 1057 chars of data",
+    "response_data": null
+  },
+  {
+    "timestamp": "2025-08-30T01:13:49.527062",
+    "test_name": "Endpoint - /api/assets/supported",
+    "success": true,
+    "details": "Returned 780 chars of data",
+    "response_data": null
+  },
+  {
+    "timestamp": "2025-08-30T01:13:49.557508",
+    "test_name": "Endpoint - /api/trading/brokers",
+    "success": true,
+    "details": "Returned 790 chars of data",
+    "response_data": null
+  }
+]

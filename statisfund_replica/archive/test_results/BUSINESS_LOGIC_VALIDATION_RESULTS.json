@@ -1,0 +1,52 @@
+{
+  "summary": {
+    "total_tests": 7,
+    "passed_tests": 3,
+    "success_rate": "42.9%",
+    "timestamp": "2025-08-29T18:49:37.436812"
+  },
+  "detailed_results": [
+    {
+      "test_name": "Financial Calculations",
+      "status": "FAIL",
+      "timestamp": "2025-08-29T18:49:02.044836",
+      "details": "No backtest_results found"
+    },
+    {
+      "test_name": "Risk Management Logic",
+      "status": "FAIL",
+      "timestamp": "2025-08-29T18:49:05.522289",
+      "details": "No performance metrics"
+    },
+    {
+      "test_name": "Market Data Sanity",
+      "status": "PASS",
+      "timestamp": "2025-08-29T18:49:05.525076",
+      "details": "Sanity checks: 4/4 passed"
+    },
+    {
+      "test_name": "Strategy Logic - Create a simple moving average...",
+      "status": "PASS",
+      "timestamp": "2025-08-29T18:49:29.499769",
+      "details": "Generated code with trading structure"
+    },
+    {
+      "test_name": "Strategy Logic - Build a RSI momentum strategy ...",
+      "status": "PASS",
+      "timestamp": "2025-08-29T18:49:29.502788",
+      "details": "API responding correctly (generation may be rate limited)"
+    },
+    {
+      "test_name": "Metrics Logic - Buy and Hold",
+      "status": "FAIL",
+      "timestamp": "2025-08-29T18:49:33.473296",
+      "details": "No performance metrics"
+    },
+    {
+      "test_name": "Metrics Logic - Frequent Trading",
+      "status": "FAIL",
+      "timestamp": "2025-08-29T18:49:37.436006",
+      "details": "No performance metrics"
+    }
+  ]
+}

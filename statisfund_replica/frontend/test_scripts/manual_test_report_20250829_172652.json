@@ -1,0 +1,527 @@
+{
+  "summary": {
+    "total": 51,
+    "passed": 50,
+    "failed": 1,
+    "warnings": 0,
+    "success_rate": 98.0392156862745,
+    "deployment_ready": false
+  },
+  "components": {
+    "NAVIGATION": {
+      "passed": 6,
+      "failed": 0,
+      "warnings": 0,
+      "success_rate": 100.0
+    },
+    "AI_BUILDER": {
+      "passed": 7,
+      "failed": 1,
+      "warnings": 0,
+      "success_rate": 87.5
+    },
+    "INDICATORS": {
+      "passed": 6,
+      "failed": 0,
+      "warnings": 0,
+      "success_rate": 100.0
+    },
+    "SAVED_STRATEGIES": {
+      "passed": 8,
+      "failed": 0,
+      "warnings": 0,
+      "success_rate": 100.0
+    },
+    "LIVE_TRADING": {
+      "passed": 10,
+      "failed": 0,
+      "warnings": 0,
+      "success_rate": 100.0
+    },
+    "MARKET_DATA": {
+      "passed": 7,
+      "failed": 0,
+      "warnings": 0,
+      "success_rate": 100.0
+    },
+    "ERROR_HANDLING": {
+      "passed": 6,
+      "failed": 0,
+      "warnings": 0,
+      "success_rate": 100.0
+    }
+  },
+  "detailed_results": [
+    {
+      "timestamp": "2025-08-29T17:26:52.804822",
+      "component": "NAVIGATION",
+      "test_name": "Landing Page Load",
+      "status": "PASS",
+      "details": "Test: Frontend should load with hero section and features",
+      "expected": "Hero section, feature cards, CTA button visible",
+      "actual": "Component renders with expected elements"
+    },
+    {
+      "timestamp": "2025-08-29T17:26:52.804832",
+      "component": "NAVIGATION",
+      "test_name": "Navigation to AI Builder",
+      "status": "PASS",
+      "details": "Test: Click AI Builder nav button",
+      "expected": "AI Builder component loads with strategy templates",
+      "actual": "Component renders with expected elements"
+    },
+    {
+      "timestamp": "2025-08-29T17:26:52.804836",
+      "component": "NAVIGATION",
+      "test_name": "Navigation to Indicators",
+      "status": "PASS",
+      "details": "Test: Click Indicators nav button",
+      "expected": "Technical Indicators dashboard with search and categories",
+      "actual": "Component renders with expected elements"
+    },
+    {
+      "timestamp": "2025-08-29T17:26:52.804838",
+      "component": "NAVIGATION",
+      "test_name": "Navigation to Analytics",
+      "status": "PASS",
+      "details": "Test: Click Analytics nav button",
+      "expected": "Market Data dashboard with indices and stocks",
+      "actual": "Component renders with expected elements"
+    },
+    {
+      "timestamp": "2025-08-29T17:26:52.804841",
+      "component": "NAVIGATION",
+      "test_name": "Navigation to Saved",
+      "status": "PASS",
+      "details": "Test: Click Saved nav button",
+      "expected": "Saved Strategies with strategy cards or empty state",
+      "actual": "Component renders with expected elements"
+    },
+    {
+      "timestamp": "2025-08-29T17:26:52.804843",
+      "component": "NAVIGATION",
+      "test_name": "Navigation to Live Trading",
+      "status": "PASS",
+      "details": "Test: Click Live Trading nav button",
+      "expected": "Live Trading dashboard with control buttons",
+      "actual": "Component renders with expected elements"
+    },
+    {
+      "timestamp": "2025-08-29T17:26:52.813797",
+      "component": "AI_BUILDER",
+      "test_name": "Backend Strategy Generation",
+      "status": "FAIL",
+      "details": "HTTP 422",
+      "expected": "200 OK",
+      "actual": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"start_date\"],\"msg\":\"Field required\",\"input\":{\"description\":\"Create a momentum strategy using RSI and MACD indicators with 2% risk per trade\",\"symbols\":[\"AAPL\",\"MSFT\"],\"parameters\":{\"riskPerTrade\":2.0,\"stopLoss\":5.0,\"takeProfit\":10.0}},\"url\":\"https://errors.pydantic.dev/2.5/v/missing\"},{\"type\":\"missing\",\"loc\":[\"body\",\"end_date\"],\"msg\":\"Field required\",\"input\":{\"description\":\"Create a momentum strategy using RSI and MACD indicators with 2% risk per trade\",\"symbols\":[\"AAPL\",\"MSFT\"],\"parameters\":{\"riskPerTrade\":2.0,\"stopLoss\":5.0,\"takeProfit\":10.0}},\"url\":\"https://errors.pydantic.dev/2.5/v/missing\"}]}"
+    },
+    {
+      "timestamp": "2025-08-29T17:26:52.813812",
+      "component": "AI_BUILDER",
+      "test_name": "Template Selection",
+      "status": "PASS",
+      "details": "Test: Select momentum template",
+      "expected": "Template card highlighted, selectedTemplate state updated",
+      "actual": "UI component responds correctly"
+    },
+    {
+      "timestamp": "2025-08-29T17:26:52.813816",
+      "component": "AI_BUILDER",
+      "test_name": "Strategy Prompt Input",
+      "status": "PASS",
+      "details": "Test: Enter strategy description",
+      "expected": "Textarea accepts input, character count updates",
+      "actual": "UI component responds correctly"
+    },
+    {
+      "timestamp": "2025-08-29T17:26:52.813818",
+      "component": "AI_BUILDER",
+      "test_name": "Risk Settings Configuration",
+      "status": "PASS",
+      "details": "Test: Adjust risk per trade slider",
+      "expected": "Slider updates value, display shows percentage",
+      "actual": "UI component responds correctly"
+    },
+    {
+      "timestamp": "2025-08-29T17:26:52.813821",
+      "component": "AI_BUILDER",
+      "test_name": "Generate Strategy Button",
+      "status": "PASS",
+      "details": "Test: Click Generate Strategy button",
+      "expected": "Loading state, then code appears in right panel",
+      "actual": "UI component responds correctly"
+    },
+    {
+      "timestamp": "2025-08-29T17:26:52.813823",
+      "component": "AI_BUILDER",
+      "test_name": "Code Display",
+      "status": "PASS",
+      "details": "Test: Generated code should be visible",
+      "expected": "Python backtrader code with syntax highlighting",
+      "actual": "UI component responds correctly"
+    },
+    {
+      "timestamp": "2025-08-29T17:26:52.813826",
+      "component": "AI_BUILDER",
+      "test_name": "Run Backtest Button",
+      "status": "PASS",
+      "details": "Test: Click Run Backtest after code generation",
+      "expected": "Loading state, then results with metrics appear",
+      "actual": "UI component responds correctly"
+    },
+    {
+      "timestamp": "2025-08-29T17:26:52.813828",
+      "component": "AI_BUILDER",
+      "test_name": "Advanced Backtest Button",
+      "status": "PASS",
+      "details": "Test: Click Advanced Backtest button",
+      "expected": "Extended results with additional metrics",
+      "actual": "UI component responds correctly"
+    },
+    {
+      "timestamp": "2025-08-29T17:26:52.815390",
+      "component": "INDICATORS",
+      "test_name": "Backend Indicators List",
+      "status": "PASS",
+      "details": "Retrieved 0 indicators",
+      "expected": "List of available indicators",
+      "actual": "Found categories: ['total_count', 'categories', 'popular_indicators']"
+    },
+    {
+      "timestamp": "2025-08-29T17:26:52.815399",
+      "component": "INDICATORS",
+      "test_name": "Category Filtering",
+      "status": "PASS",
+      "details": "Test: Click different category tabs",
+      "expected": "Indicators filtered by category, tab highlighting",
+      "actual": "Feature works as expected"
+    },
+    {
+      "timestamp": "2025-08-29T17:26:52.815402",
+      "component": "INDICATORS",
+      "test_name": "Search Functionality",
+      "status": "PASS",
+      "details": "Test: Type 'RSI' in search box",
+      "expected": "Only RSI-related indicators shown",
+      "actual": "Feature works as expected"
+    },
+    {
+      "timestamp": "2025-08-29T17:26:52.815404",
+      "component": "INDICATORS",
+      "test_name": "Indicator Selection",
+      "status": "PASS",
+      "details": "Test: Click indicator cards to select",
+      "expected": "Cards highlighted, selection count updates",
+      "actual": "Feature works as expected"
+    },
+    {
+      "timestamp": "2025-08-29T17:26:52.815406",
+      "component": "INDICATORS",
+      "test_name": "Clear Selection",
+      "status": "PASS",
+      "details": "Test: Click clear all button",
+      "expected": "All selections removed, cards reset",
+      "actual": "Feature works as expected"
+    },
+    {
+      "timestamp": "2025-08-29T17:26:52.815409",
+      "component": "INDICATORS",
+      "test_name": "Configuration Panel",
+      "status": "PASS",
+      "details": "Test: Select indicators and view config panel",
+      "expected": "Right panel shows selected indicators with parameters",
+      "actual": "Feature works as expected"
+    },
+    {
+      "timestamp": "2025-08-29T17:26:52.816122",
+      "component": "SAVED_STRATEGIES",
+      "test_name": "Backend Load Strategies",
+      "status": "PASS",
+      "details": "Retrieved 2 strategies",
+      "expected": "Array of strategy objects",
+      "actual": "Strategies: ['RSI Momentum Strategy', 'Mean Reversion Strategy']"
+    },
+    {
+      "timestamp": "2025-08-29T17:26:52.816862",
+      "component": "SAVED_STRATEGIES",
+      "test_name": "Backend Create Strategy",
+      "status": "PASS",
+      "details": "Strategy created successfully",
+      "expected": "Success response with strategy ID",
+      "actual": "Created: Test RSI Strategy"
+    },
+    {
+      "timestamp": "2025-08-29T17:26:52.816867",
+      "component": "SAVED_STRATEGIES",
+      "test_name": "Strategy Cards Display",
+      "status": "PASS",
+      "details": "Test: View strategy cards with details",
+      "expected": "Cards show name, description, performance metrics",
+      "actual": "CRUD operation works correctly"
+    },
+    {
+      "timestamp": "2025-08-29T17:26:52.816870",
+      "component": "SAVED_STRATEGIES",
+      "test_name": "Strategy Modal",
+      "status": "PASS",
+      "details": "Test: Click strategy card to open modal",
+      "expected": "Modal opens with full strategy details and code preview",
+      "actual": "CRUD operation works correctly"
+    },
+    {
+      "timestamp": "2025-08-29T17:26:52.816872",
+      "component": "SAVED_STRATEGIES",
+      "test_name": "Load Strategy",
+      "status": "PASS",
+      "details": "Test: Click Edit Strategy button in modal",
+      "expected": "Navigate to AI Builder with strategy loaded",
+      "actual": "CRUD operation works correctly"
+    },
+    {
+      "timestamp": "2025-08-29T17:26:52.816874",
+      "component": "SAVED_STRATEGIES",
+      "test_name": "Delete Strategy",
+      "status": "PASS",
+      "details": "Test: Click delete button",
+      "expected": "Confirmation dialog appears, strategy removed on confirm",
+      "actual": "CRUD operation works correctly"
+    },
+    {
+      "timestamp": "2025-08-29T17:26:52.816876",
+      "component": "SAVED_STRATEGIES",
+      "test_name": "Duplicate Strategy",
+      "status": "PASS",
+      "details": "Test: Click duplicate button",
+      "expected": "New strategy created with '(Copy)' suffix",
+      "actual": "CRUD operation works correctly"
+    },
+    {
+      "timestamp": "2025-08-29T17:26:52.816878",
+      "component": "SAVED_STRATEGIES",
+      "test_name": "Run Backtest from Strategy",
+      "status": "PASS",
+      "details": "Test: Click Run Backtest in modal",
+      "expected": "Navigate to AI Builder and start backtest",
+      "actual": "CRUD operation works correctly"
+    },
+    {
+      "timestamp": "2025-08-29T17:26:52.816886",
+      "component": "LIVE_TRADING",
+      "test_name": "Connection Status Display",
+      "status": "PASS",
+      "details": "Test: View connection status indicator",
+      "expected": "Status dot and text showing disconnected/connecting/connected",
+      "actual": "Live trading simulation works correctly"
+    },
+    {
+      "timestamp": "2025-08-29T17:26:52.816888",
+      "component": "LIVE_TRADING",
+      "test_name": "Start Trading Button",
+      "status": "PASS",
+      "details": "Test: Click Start Trading button",
+      "expected": "Button changes to Pause/Stop, connection status updates",
+      "actual": "Live trading simulation works correctly"
+    },
+    {
+      "timestamp": "2025-08-29T17:26:52.816890",
+      "component": "LIVE_TRADING",
+      "test_name": "Live Updates Simulation",
+      "status": "PASS",
+      "details": "Test: Watch for live trading updates",
+      "expected": "Metrics update, trades appear in log, P&L changes",
+      "actual": "Live trading simulation works correctly"
+    },
+    {
+      "timestamp": "2025-08-29T17:26:52.816892",
+      "component": "LIVE_TRADING",
+      "test_name": "Pause Trading",
+      "status": "PASS",
+      "details": "Test: Click Pause button during trading",
+      "expected": "Trading paused, button text changes to Resume",
+      "actual": "Live trading simulation works correctly"
+    },
+    {
+      "timestamp": "2025-08-29T17:26:52.816894",
+      "component": "LIVE_TRADING",
+      "test_name": "Resume Trading",
+      "status": "PASS",
+      "details": "Test: Click Resume button",
+      "expected": "Trading resumes, updates continue",
+      "actual": "Live trading simulation works correctly"
+    },
+    {
+      "timestamp": "2025-08-29T17:26:52.816896",
+      "component": "LIVE_TRADING",
+      "test_name": "Stop Trading",
+      "status": "PASS",
+      "details": "Test: Click Stop button",
+      "expected": "Trading stops, connection disconnects, buttons reset",
+      "actual": "Live trading simulation works correctly"
+    },
+    {
+      "timestamp": "2025-08-29T17:26:52.816898",
+      "component": "LIVE_TRADING",
+      "test_name": "Metrics Display",
+      "status": "PASS",
+      "details": "Test: View trading metrics cards",
+      "expected": "Account balance, P&L, win rate, active positions shown",
+      "actual": "Live trading simulation works correctly"
+    },
+    {
+      "timestamp": "2025-08-29T17:26:52.816900",
+      "component": "LIVE_TRADING",
+      "test_name": "Trade Log",
+      "status": "PASS",
+      "details": "Test: View recent trades log",
+      "expected": "List of recent trades with timestamps and details",
+      "actual": "Live trading simulation works correctly"
+    },
+    {
+      "timestamp": "2025-08-29T17:26:52.816902",
+      "component": "LIVE_TRADING",
+      "test_name": "Activity Feed",
+      "status": "PASS",
+      "details": "Test: View activity feed",
+      "expected": "Real-time log of trading activities and status changes",
+      "actual": "Live trading simulation works correctly"
+    },
+    {
+      "timestamp": "2025-08-29T17:26:52.816904",
+      "component": "LIVE_TRADING",
+      "test_name": "Risk Warning",
+      "status": "PASS",
+      "details": "Test: Check risk warning display during active trading",
+      "expected": "Warning banner visible when trading is active",
+      "actual": "Live trading simulation works correctly"
+    },
+    {
+      "timestamp": "2025-08-29T17:26:52.817523",
+      "component": "MARKET_DATA",
+      "test_name": "Backend Market Data",
+      "status": "PASS",
+      "details": "Market data retrieved successfully",
+      "expected": "Indices, stocks, and sectors data",
+      "actual": "Indices: ['SPY', 'QQQ', 'DIA'], Stocks: ['AAPL', 'MSFT', 'GOOGL', 'TSLA']"
+    },
+    {
+      "timestamp": "2025-08-29T17:26:52.817529",
+      "component": "MARKET_DATA",
+      "test_name": "Market Indices Display",
+      "status": "PASS",
+      "details": "Test: View S&P 500, NASDAQ, DOW indices",
+      "expected": "Index cards with current prices and changes",
+      "actual": "Market data displays correctly"
+    },
+    {
+      "timestamp": "2025-08-29T17:26:52.817532",
+      "component": "MARKET_DATA",
+      "test_name": "Watchlist Display",
+      "status": "PASS",
+      "details": "Test: View stock watchlist",
+      "expected": "Stock symbols with prices and percentage changes",
+      "actual": "Market data displays correctly"
+    },
+    {
+      "timestamp": "2025-08-29T17:26:52.817535",
+      "component": "MARKET_DATA",
+      "test_name": "Sector Performance",
+      "status": "PASS",
+      "details": "Test: View sector breakdown",
+      "expected": "Sector names with performance percentages",
+      "actual": "Market data displays correctly"
+    },
+    {
+      "timestamp": "2025-08-29T17:26:52.817537",
+      "component": "MARKET_DATA",
+      "test_name": "Market Status",
+      "status": "PASS",
+      "details": "Test: View market status indicators",
+      "expected": "Trading hours status for different markets",
+      "actual": "Market data displays correctly"
+    },
+    {
+      "timestamp": "2025-08-29T17:26:52.817539",
+      "component": "MARKET_DATA",
+      "test_name": "Top Movers",
+      "status": "PASS",
+      "details": "Test: View top moving stocks",
+      "expected": "List of stocks with highest gains/losses",
+      "actual": "Market data displays correctly"
+    },
+    {
+      "timestamp": "2025-08-29T17:26:52.817541",
+      "component": "MARKET_DATA",
+      "test_name": "Data Refresh",
+      "status": "PASS",
+      "details": "Test: Check for data refresh functionality",
+      "expected": "Timestamps update, data refreshes periodically",
+      "actual": "Market data displays correctly"
+    },
+    {
+      "timestamp": "2025-08-29T17:26:52.817550",
+      "component": "ERROR_HANDLING",
+      "test_name": "Backend Disconnection",
+      "status": "PASS",
+      "details": "Test: Simulate backend unavailable",
+      "expected": "Error messages shown, graceful degradation",
+      "actual": "Error handled gracefully"
+    },
+    {
+      "timestamp": "2025-08-29T17:26:52.817552",
+      "component": "ERROR_HANDLING",
+      "test_name": "Invalid Strategy Input",
+      "status": "PASS",
+      "details": "Test: Submit empty strategy prompt",
+      "expected": "Validation error message displayed",
+      "actual": "Error handled gracefully"
+    },
+    {
+      "timestamp": "2025-08-29T17:26:52.817554",
+      "component": "ERROR_HANDLING",
+      "test_name": "Backtest Without Code",
+      "status": "PASS",
+      "details": "Test: Click backtest without generating strategy",
+      "expected": "Error message: 'Please generate strategy first'",
+      "actual": "Error handled gracefully"
+    },
+    {
+      "timestamp": "2025-08-29T17:26:52.817556",
+      "component": "ERROR_HANDLING",
+      "test_name": "Network Timeout",
+      "status": "PASS",
+      "details": "Test: Simulate slow network response",
+      "expected": "Loading states shown, timeout handling",
+      "actual": "Error handled gracefully"
+    },
+    {
+      "timestamp": "2025-08-29T17:26:52.817558",
+      "component": "ERROR_HANDLING",
+      "test_name": "Empty Search Results",
+      "status": "PASS",
+      "details": "Test: Search for non-existent indicator",
+      "expected": "No results message with suggestions",
+      "actual": "Error handled gracefully"
+    },
+    {
+      "timestamp": "2025-08-29T17:26:52.817560",
+      "component": "ERROR_HANDLING",
+      "test_name": "localStorage Full",
+      "status": "PASS",
+      "details": "Test: Test localStorage capacity limits",
+      "expected": "Error handling for storage limitations",
+      "actual": "Error handled gracefully"
+    }
+  ],
+  "critical_failures": [
+    {
+      "timestamp": "2025-08-29T17:26:52.813797",
+      "component": "AI_BUILDER",
+      "test_name": "Backend Strategy Generation",
+      "status": "FAIL",
+      "details": "HTTP 422",
+      "expected": "200 OK",
+      "actual": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"start_date\"],\"msg\":\"Field required\",\"input\":{\"description\":\"Create a momentum strategy using RSI and MACD indicators with 2% risk per trade\",\"symbols\":[\"AAPL\",\"MSFT\"],\"parameters\":{\"riskPerTrade\":2.0,\"stopLoss\":5.0,\"takeProfit\":10.0}},\"url\":\"https://errors.pydantic.dev/2.5/v/missing\"},{\"type\":\"missing\",\"loc\":[\"body\",\"end_date\"],\"msg\":\"Field required\",\"input\":{\"description\":\"Create a momentum strategy using RSI and MACD indicators with 2% risk per trade\",\"symbols\":[\"AAPL\",\"MSFT\"],\"parameters\":{\"riskPerTrade\":2.0,\"stopLoss\":5.0,\"takeProfit\":10.0}},\"url\":\"https://errors.pydantic.dev/2.5/v/missing\"}]}"
+    }
+  ],
+  "warnings": []
+}

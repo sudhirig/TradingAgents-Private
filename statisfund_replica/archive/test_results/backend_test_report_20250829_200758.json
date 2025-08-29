@@ -1,0 +1,65 @@
+[
+  {
+    "test": "Server Health Check",
+    "success": true,
+    "message": "Backend server is running",
+    "timestamp": "2025-08-29T20:07:36.952007",
+    "data": null
+  },
+  {
+    "test": "Strategy Generation",
+    "success": true,
+    "message": "Rate limited - expected behavior",
+    "timestamp": "2025-08-29T20:07:36.953497",
+    "data": null
+  },
+  {
+    "test": "Basic Backtest",
+    "success": true,
+    "message": "Portfolio: $10,003.48, Return: 0.03%",
+    "timestamp": "2025-08-29T20:07:43.495431",
+    "data": null
+  },
+  {
+    "test": "Advanced Backtest",
+    "success": true,
+    "message": "Sharpe: 0.00, Max DD: 0.00%",
+    "timestamp": "2025-08-29T20:07:44.555003",
+    "data": null
+  },
+  {
+    "test": "Technical Indicators (SPY)",
+    "success": true,
+    "message": "Retrieved 20 indicators",
+    "timestamp": "2025-08-29T20:07:45.560425",
+    "data": null
+  },
+  {
+    "test": "Performance Metrics",
+    "success": true,
+    "message": "Advanced indicators endpoint working",
+    "timestamp": "2025-08-29T20:07:46.570787",
+    "data": null
+  },
+  {
+    "test": "Error Handling - Invalid Strategy Code",
+    "success": false,
+    "message": "Should have returned error status",
+    "timestamp": "2025-08-29T20:07:52.982656",
+    "data": null
+  },
+  {
+    "test": "Error Handling - Invalid Symbol",
+    "success": false,
+    "message": "Should have returned error status",
+    "timestamp": "2025-08-29T20:07:57.013998",
+    "data": null
+  },
+  {
+    "test": "Error Handling - Missing Required Fields",
+    "success": false,
+    "message": "Should have returned error status",
+    "timestamp": "2025-08-29T20:07:57.018212",
+    "data": null
+  }
+]

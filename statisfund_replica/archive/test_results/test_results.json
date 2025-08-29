@@ -1,0 +1,67 @@
+{
+  "timestamp": "2025-08-28T14:16:18.426642",
+  "tests_passed": 4,
+  "tests_failed": 6,
+  "test_details": [
+    {
+      "test": "Server Health Check",
+      "passed": true,
+      "details": "Status: 200",
+      "timestamp": "2025-08-28T14:16:18.438822"
+    },
+    {
+      "test": "User Ideas Endpoint",
+      "passed": true,
+      "details": "Ideas remaining: 3",
+      "timestamp": "2025-08-28T14:16:18.440347"
+    },
+    {
+      "test": "Data Endpoints",
+      "passed": false,
+      "details": "Data: 422, RSI: 422, MA: 422",
+      "timestamp": "2025-08-28T14:16:18.444940"
+    },
+    {
+      "test": "Statistics Endpoint",
+      "passed": true,
+      "details": "Total strategies: 1",
+      "timestamp": "2025-08-28T14:16:18.447224"
+    },
+    {
+      "test": "Templates Endpoint",
+      "passed": true,
+      "details": "Available templates: 0",
+      "timestamp": "2025-08-28T14:16:18.448298"
+    },
+    {
+      "test": "Strategy Generation",
+      "passed": false,
+      "details": "Generated 0 characters of code",
+      "timestamp": "2025-08-28T14:16:18.449629"
+    },
+    {
+      "test": "SSE Streaming",
+      "passed": false,
+      "details": "Received 1 chunks",
+      "timestamp": "2025-08-28T14:16:18.450760"
+    },
+    {
+      "test": "Strategy Validation",
+      "passed": false,
+      "details": "Validation score: N/A",
+      "timestamp": "2025-08-28T14:16:18.451960"
+    },
+    {
+      "test": "Backtest Engine",
+      "passed": false,
+      "details": "Total return: N/A%, Sharpe: N/A",
+      "timestamp": "2025-08-28T14:16:18.453055"
+    },
+    {
+      "test": "Strategy Management",
+      "passed": false,
+      "details": "Error: 'str' object has no attribute 'get'",
+      "timestamp": "2025-08-28T14:16:18.454737"
+    }
+  ]
+}

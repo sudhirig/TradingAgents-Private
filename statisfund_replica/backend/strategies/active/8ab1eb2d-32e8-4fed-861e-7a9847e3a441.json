@@ -1,0 +1,19 @@
+{
+  "id": "8ab1eb2d-32e8-4fed-861e-7a9847e3a441",
+  "name": "Test",
+  "description": "test",
+  "code": "test",
+  "symbols": [],
+  "parameters": {},
+  "backtest_config": {},
+  "performance_metrics": {},
+  "validation_results": {},
+  "created_at": "2025-08-28T14:17:31.135907",
+  "updated_at": "2025-08-28T14:17:31.135907",
+  "version": 1,
+  "code_hash": "098f6bcd4621d373cade4e832627b4f6",
+  "status": "active",
+  "tags": [],
+  "author": "unknown",
+  "category": "custom"
+}

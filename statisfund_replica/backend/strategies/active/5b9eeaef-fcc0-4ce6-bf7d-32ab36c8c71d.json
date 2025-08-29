@@ -1,0 +1,23 @@
+{
+  "id": "5b9eeaef-fcc0-4ce6-bf7d-32ab36c8c71d",
+  "name": "Test Strategy",
+  "description": "Test strategy for debugging",
+  "code": "import backtrader as bt\nclass TestStrategy(bt.Strategy):\n    pass",
+  "symbols": [
+    "AAPL"
+  ],
+  "parameters": {},
+  "backtest_config": {},
+  "performance_metrics": {},
+  "validation_results": {},
+  "created_at": "2025-08-28T17:39:16.201761",
+  "updated_at": "2025-08-28T17:39:16.201761",
+  "version": 1,
+  "code_hash": "161e71154806145849a52e37b8a7e817",
+  "status": "active",
+  "tags": [
+    "test"
+  ],
+  "author": "unknown",
+  "category": "custom"
+}

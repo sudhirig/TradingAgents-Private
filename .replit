@@ -1,0 +1,51 @@
+[nix]
+channel = "stable-23.11"
+
+[deployment]
+run = "uvicorn app:app --host 0.0.0.0 --port 8000"
+deploymentTarget = "cloudrun"
+
+# Statis Fund Backend - Main service on port 80
+[[ports]]
+localPort = 8000
+externalPort = 80
+exposeLocalhost = false
+
+# TradingAgents Backend - Secondary service  
+[[ports]]
+localPort = 8001
+externalPort = 8001
+exposeLocalhost = false
+
+# Statis Fund Frontend
+[[ports]]
+localPort = 3000
+externalPort = 3000
+exposeLocalhost = false
+
+# TradingAgents Frontend
+[[ports]]
+localPort = 3001
+externalPort = 3001
+exposeLocalhost = false
+
+[env]
+PYTHON_LD_LIBRARY_PATH = "/nix/store/p21fdyxqb3yqflpim7g8s1mymgpnqiv7-gcc-12.3.0-lib/lib:/nix/store/m71p0yx8ph6rcnp9c1xkp4qwxh6pnh79-zlib-1.2.13/lib:/nix/store/kn47hayxab8gc01jhr9a2gyx97h8ydlp-libcxx-16.0.6/lib:/nix/store/j9yqzb9c8jlr2w8024dh6s5klrmapjg2-glibc-2.38-27/lib"
+REPLIT = "true"
+
+[gitHubImport]
+requiredFiles = [".replit", "replit.nix", "app.py", "requirements.txt"]
+
+[languages]
+
+[languages.python3]
+pattern = "**/*.py"
+
+[languages.python3.languageServer]
+start = "pylsp"
+
+[languages.javascript]
+pattern = "**/{*.js,*.jsx,*.ts,*.tsx,*.json}"
+
+[languages.javascript.languageServer]
+start = "typescript-language-server --stdio"

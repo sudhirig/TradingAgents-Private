@@ -1,0 +1,26 @@
+{
+  "id": "a14e4aa1-a8f0-494e-ac3b-d28179dd0c67",
+  "name": "Production Test Strategy",
+  "description": "Production-ready test strategy",
+  "code": "import backtrader as bt\n\nclass ProductionStrategy(bt.Strategy):\n    def __init__(self):\n        self.sma = bt.indicators.SimpleMovingAverage(self.data.close, period=20)\n    \n    def next(self):\n        if not self.position and self.data.close[0] > self.sma[0]:\n            self.buy(size=100)\n        elif self.position and self.data.close[0] < self.sma[0]:\n            self.sell(size=self.position.size)\n",
+  "symbols": [
+    "SPY"
+  ],
+  "parameters": {
+    "sma_period": 20
+  },
+  "backtest_config": {},
+  "performance_metrics": {},
+  "validation_results": {},
+  "created_at": "2025-08-28T17:45:59.294021",
+  "updated_at": "2025-08-28T17:45:59.294021",
+  "version": 1,
+  "code_hash": "51339175ee02e7bab5d4f91466ee96fa",
+  "status": "active",
+  "tags": [
+    "production",
+    "test"
+  ],
+  "author": "unknown",
+  "category": "custom"
+}

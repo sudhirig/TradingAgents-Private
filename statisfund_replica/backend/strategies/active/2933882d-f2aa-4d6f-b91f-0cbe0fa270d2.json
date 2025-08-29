@@ -1,0 +1,28 @@
+{
+  "id": "2933882d-f2aa-4d6f-b91f-0cbe0fa270d2",
+  "name": "Test Momentum Strategy",
+  "description": "Test strategy for comprehensive testing",
+  "code": "\nimport backtrader as bt\n\nclass TestStrategy(bt.Strategy):\n    def __init__(self):\n        self.sma = bt.indicators.SimpleMovingAverage(self.data.close, period=20)\n    \n    def next(self):\n        if not self.position and self.data.close[0] > self.sma[0]:\n            self.buy()\n        elif self.position and self.data.close[0] < self.sma[0]:\n            self.sell()\n",
+  "symbols": [
+    "AAPL",
+    "SPY"
+  ],
+  "parameters": {
+    "sma_period": 20
+  },
+  "backtest_config": {},
+  "performance_metrics": {},
+  "validation_results": {},
+  "created_at": "2025-08-28T17:35:37.911689",
+  "updated_at": "2025-08-28T17:35:37.911689",
+  "version": 1,
+  "code_hash": "5c2d7328219e41f01f3a506a9904a260",
+  "status": "active",
+  "tags": [
+    "test",
+    "momentum",
+    "sma"
+  ],
+  "author": "unknown",
+  "category": "custom"
+}

@@ -1,0 +1,59 @@
+{
+  "summary": {
+    "total_tests": 8,
+    "passed_tests": 8,
+    "success_rate": "100.0%",
+    "working_symbols": [],
+    "timestamp": "2025-08-29T18:33:49.448638"
+  },
+  "detailed_results": [
+    {
+      "test_name": "Alpha Vantage AAPL",
+      "status": "PASS",
+      "timestamp": "2025-08-29T18:33:23.588097",
+      "details": "100 days of data"
+    },
+    {
+      "test_name": "Alpha Vantage MSFT",
+      "status": "PASS",
+      "timestamp": "2025-08-29T18:33:24.734147",
+      "details": "100 days of data"
+    },
+    {
+      "test_name": "Real Data Backtest AAPL",
+      "status": "PASS",
+      "timestamp": "2025-08-29T18:33:30.445192",
+      "details": "Final value: $10038.92, Trades: 2"
+    },
+    {
+      "test_name": "Real Data Backtest TSLA",
+      "status": "PASS",
+      "timestamp": "2025-08-29T18:33:36.115851",
+      "details": "Final value: $9974.27, Trades: 2"
+    },
+    {
+      "test_name": "Real Data Variance",
+      "status": "PASS",
+      "timestamp": "2025-08-29T18:33:36.115862",
+      "details": "Different symbols produced different results (confirms real data)"
+    },
+    {
+      "test_name": "No Fallback INVALID",
+      "status": "PASS",
+      "timestamp": "2025-08-29T18:33:40.526358",
+      "details": "Correctly failed for invalid symbol"
+    },
+    {
+      "test_name": "No Fallback FAKESYM",
+      "status": "PASS",
+      "timestamp": "2025-08-29T18:33:44.962224",
+      "details": "Correctly failed for invalid symbol"
+    },
+    {
+      "test_name": "No Fallback NOTREAL",
+      "status": "PASS",
+      "timestamp": "2025-08-29T18:33:49.447298",
+      "details": "Correctly failed for invalid symbol"
+    }
+  ]
+}

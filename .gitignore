@@ -1,9 +1,57 @@
+# Environment and virtual environments
 env/
+.venv/
+venv/
+.env
+.env.local
+.env.production
+
+# Python
 __pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+
+# IDE and OS
 .DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Data and logs
 *.csv
-src/
+*.log
+*.db
+*.sqlite
+*.sqlite3
+
+# Results and cache
 eval_results/
 eval_data/
-*.egg-info/
-.env
+results/
+.pytest_cache/
+.coverage
+
+# Node.js (for frontends)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# API Keys and sensitive files
+config.json
+secrets.json
+*.key
+*.pem
+
+# Replit specific
+.replit.lock

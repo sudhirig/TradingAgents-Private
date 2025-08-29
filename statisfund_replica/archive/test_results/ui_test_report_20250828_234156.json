@@ -1,0 +1,101 @@
+{
+  "summary": {
+    "total_tests": 11,
+    "passed": 9,
+    "failed": 2,
+    "success_rate": 81.81818181818183
+  },
+  "component_summary": {
+    "Backend": {
+      "passed": 0,
+      "failed": 1
+    },
+    "Frontend Component": {
+      "passed": 9,
+      "failed": 0
+    },
+    "Responsive Design": {
+      "passed": 0,
+      "failed": 1
+    }
+  },
+  "detailed_results": [
+    {
+      "component": "Backend",
+      "test": "Health check",
+      "passed": false,
+      "details": "",
+      "timestamp": "2025-08-28T23:41:56.241661"
+    },
+    {
+      "component": "Frontend Component",
+      "test": "Landing Page",
+      "passed": true,
+      "details": "Component available in React app",
+      "timestamp": "2025-08-28T23:41:56.250447"
+    },
+    {
+      "component": "Frontend Component",
+      "test": "AI Strategy Builder",
+      "passed": true,
+      "details": "Component available in React app",
+      "timestamp": "2025-08-28T23:41:56.252752"
+    },
+    {
+      "component": "Frontend Component",
+      "test": "Technical Indicators Dashboard",
+      "passed": true,
+      "details": "Component available in React app",
+      "timestamp": "2025-08-28T23:41:56.254223"
+    },
+    {
+      "component": "Frontend Component",
+      "test": "Advanced Order Management",
+      "passed": true,
+      "details": "Component available in React app",
+      "timestamp": "2025-08-28T23:41:56.256560"
+    },
+    {
+      "component": "Frontend Component",
+      "test": "Risk Management",
+      "passed": true,
+      "details": "Component available in React app",
+      "timestamp": "2025-08-28T23:41:56.258131"
+    },
+    {
+      "component": "Frontend Component",
+      "test": "Market Data Dashboard",
+      "passed": true,
+      "details": "Component available in React app",
+      "timestamp": "2025-08-28T23:41:56.259423"
+    },
+    {
+      "component": "Frontend Component",
+      "test": "Performance Analytics",
+      "passed": true,
+      "details": "Component available in React app",
+      "timestamp": "2025-08-28T23:41:56.260737"
+    },
+    {
+      "component": "Frontend Component",
+      "test": "Saved Strategies",
+      "passed": true,
+      "details": "Component available in React app",
+      "timestamp": "2025-08-28T23:41:56.261881"
+    },
+    {
+      "component": "Frontend Component",
+      "test": "Live Trading",
+      "passed": true,
+      "details": "Component available in React app",
+      "timestamp": "2025-08-28T23:41:56.263089"
+    },
+    {
+      "component": "Responsive Design",
+      "test": "Tailwind CSS Integration",
+      "passed": false,
+      "details": "Found responsive classes: ",
+      "timestamp": "2025-08-28T23:41:56.264477"
+    }
+  ]
+}

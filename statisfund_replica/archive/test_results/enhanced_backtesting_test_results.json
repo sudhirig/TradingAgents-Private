@@ -1,0 +1,189 @@
+{
+  "summary": {
+    "backtest_success_rate": 1.0,
+    "data_success_rate": 1.0,
+    "total_tests": 9,
+    "successful_tests": 9,
+    "best_strategy": "RSI Mean Reversion",
+    "best_return": 0.7299999999999999,
+    "timestamp": "2025-08-28T20:59:41.421000"
+  },
+  "backtest_results": {
+    "Simple SMA Strategy": {
+      "SPY": {
+        "status": "SUCCESS",
+        "total_return": -2.63,
+        "sharpe_ratio": 0,
+        "max_drawdown": 12.32,
+        "total_trades": 20,
+        "win_rate": 55.0,
+        "final_value": 0
+      },
+      "AAPL": {
+        "status": "SUCCESS",
+        "total_return": -19.11,
+        "sharpe_ratio": 0,
+        "max_drawdown": 22.58,
+        "total_trades": 14,
+        "win_rate": 28.57,
+        "final_value": 0
+      },
+      "INVALID_SYMBOL": {
+        "status": "SUCCESS",
+        "total_return": -7.94,
+        "sharpe_ratio": 0,
+        "max_drawdown": 26.15,
+        "total_trades": 23,
+        "win_rate": 43.48,
+        "final_value": 0
+      }
+    },
+    "RSI Mean Reversion": {
+      "SPY": {
+        "status": "SUCCESS",
+        "total_return": 3.69,
+        "sharpe_ratio": 0,
+        "max_drawdown": 16.15,
+        "total_trades": 1,
+        "win_rate": 100.0,
+        "final_value": 0
+      },
+      "AAPL": {
+        "status": "SUCCESS",
+        "total_return": -12.44,
+        "sharpe_ratio": 0,
+        "max_drawdown": 35.54,
+        "total_trades": 1,
+        "win_rate": 0.0,
+        "final_value": 0
+      },
+      "INVALID_SYMBOL": {
+        "status": "SUCCESS",
+        "total_return": 10.94,
+        "sharpe_ratio": 0,
+        "max_drawdown": 8.22,
+        "total_trades": 1,
+        "win_rate": 100.0,
+        "final_value": 0
+      }
+    },
+    "Multi-Indicator Strategy": {
+      "SPY": {
+        "status": "SUCCESS",
+        "total_return": -4.99,
+        "sharpe_ratio": 0,
+        "max_drawdown": 12.22,
+        "total_trades": 23,
+        "win_rate": 43.48,
+        "final_value": 0
+      },
+      "AAPL": {
+        "status": "SUCCESS",
+        "total_return": -19.11,
+        "sharpe_ratio": 0,
+        "max_drawdown": 22.58,
+        "total_trades": 14,
+        "win_rate": 28.57,
+        "final_value": 0
+      },
+      "INVALID_SYMBOL": {
+        "status": "SUCCESS",
+        "total_return": -11.91,
+        "sharpe_ratio": 0,
+        "max_drawdown": 28.31,
+        "total_trades": 27,
+        "win_rate": 44.44,
+        "final_value": 0
+      }
+    }
+  },
+  "data_quality_results": {
+    "SPY": {
+      "status": "SUCCESS",
+      "quality_metrics": {
+        "rows": 260,
+        "date_range": "2023-01-02 to 2023-12-29",
+        "price_range": "$371.19 - $479.53",
+        "avg_volume": 1085570,
+        "missing_values": "0",
+        "valid_ohlc": "True",
+        "positive_prices": "True",
+        "columns": [
+          "Open",
+          "High",
+          "Low",
+          "Close",
+          "Volume"
+        ]
+      }
+    },
+    "AAPL": {
+      "status": "SUCCESS",
+      "quality_metrics": {
+        "rows": 152,
+        "date_range": "2023-06-01 to 2023-12-29",
+        "price_range": "$105.22 - $157.66",
+        "avg_volume": 1105971,
+        "missing_values": "0",
+        "valid_ohlc": "True",
+        "positive_prices": "True",
+        "columns": [
+          "Open",
+          "High",
+          "Low",
+          "Close",
+          "Volume"
+        ]
+      }
+    },
+    "INVALID": {
+      "status": "SUCCESS",
+      "quality_metrics": {
+        "rows": 130,
+        "date_range": "2023-01-02 to 2023-06-30",
+        "price_range": "$111.14 - $168.53",
+        "avg_volume": 1084030,
+        "missing_values": "0",
+        "valid_ohlc": "True",
+        "positive_prices": "True",
+        "columns": [
+          "Open",
+          "High",
+          "Low",
+          "Close",
+          "Volume"
+        ]
+      }
+    },
+    "RELIANCE.NS": {
+      "status": "SUCCESS",
+      "quality_metrics": {
+        "rows": 260,
+        "date_range": "2023-01-02 to 2023-12-29",
+        "price_range": "$978.08 - $2330.67",
+        "avg_volume": 560054,
+        "missing_values": "0",
+        "valid_ohlc": "True",
+        "positive_prices": "True",
+        "columns": [
+          "Open",
+          "High",
+          "Low",
+          "Close",
+          "Volume"
+        ]
+      }
+    }
+  },
+  "test_metadata": {
+    "test_date": "2025-08-28T20:59:41.421007",
+    "test_version": "enhanced_v2.0",
+    "features_tested": [
+      "Enhanced yfinance data loading",
+      "Synthetic data fallback",
+      "Multiple strategy types",
+      "Data quality validation",
+      "Performance analytics"
+    ]
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "summary": {
+    "total_tests": 14,
+    "passed": 11,
+    "failed": 0,
+    "warnings": 3,
+    "compliance_rate": 78.57142857142857,
+    "status": "MOSTLY COMPLIANT"
+  },
+  "categories": {
+    "Core Features": {
+      "pass": 1,
+      "fail": 0,
+      "warning": 2
+    },
+    "Interactive Backtesting": {
+      "pass": 1,
+      "fail": 0,
+      "warning": 0
+    },
+    "Comprehensive Analytics": {
+      "pass": 0,
+      "fail": 0,
+      "warning": 1
+    },
+    "Strategy Management": {
+      "pass": 1,
+      "fail": 0,
+      "warning": 0
+    },
+    "API Endpoints": {
+      "pass": 5,
+      "fail": 0,
+      "warning": 0
+    },
+    "Technical Stack": {
+      "pass": 2,
+      "fail": 0,
+      "warning": 0
+    },
+    "Pricing Tiers": {
+      "pass": 1,
+      "fail": 0,
+      "warning": 0
+    }
+  },
+  "tests": [
+    {
+      "category": "Core Features",
+      "feature": "Natural Language Strategy Input",
+      "status": "pass",
+      "details": "Successfully processed NL input with 5 streaming chunks",
+      "plan_requirement": "Natural Language Strategy Input: 'if the 20D MA of SPY is increasing, buy UPRO, else sell to cash'",
+      "timestamp": "2025-08-28T18:14:30.272260"
+    },
+    {
+      "category": "Core Features",
+      "feature": "Real-time AI Code Generation",
+      "status": "warning",
+      "details": "SSE working but code generation incomplete in test timeframe",
+      "plan_requirement": "Real-time AI Code Generation required",
+      "timestamp": "2025-08-28T18:14:30.274767"
+    },
+    {
+      "category": "Core Features",
+      "feature": "Multiple AI Models",
+      "status": "warning",
+      "details": "AI model parameter accepted but functionality unclear",
+      "plan_requirement": "Multiple AI Models required",
+      "timestamp": "2025-08-28T18:14:30.279054"
+    },
+    {
+      "category": "Interactive Backtesting",
+      "feature": "Date Range Selection",
+      "status": "pass",
+      "details": "Backtest completed with return: -6.6%",
+      "plan_requirement": "Interactive Backtesting: Date range selection, strategy locking, real-time results",
+      "timestamp": "2025-08-28T18:14:30.316728"
+    },
+    {
+      "category": "Comprehensive Analytics",
+      "feature": "Performance Metrics",
+      "status": "warning",
+      "details": "Limited analytics: []",
+      "plan_requirement": "Comprehensive Analytics required",
+      "timestamp": "2025-08-28T18:14:30.318782"
+    },
+    {
+      "category": "Strategy Management",
+      "feature": "Save & List Strategies",
+      "status": "pass",
+      "details": "Strategy saved with ID: strategy... and listing works",
+      "plan_requirement": "Strategy Management: Save strategies, follow algorithms, investment tracking",
+      "timestamp": "2025-08-28T18:14:30.321491"
+    },
+    {
+      "category": "API Endpoints",
+      "feature": "Root API",
+      "status": "pass",
+      "details": "Endpoint operational",
+      "plan_requirement": "RESTful API for data, indicators, moving averages, volatility, etc.",
+      "timestamp": "2025-08-28T18:14:30.322626"
+    },
+    {
+      "category": "API Endpoints",
+      "feature": "Statistics API",
+      "status": "pass",
+      "details": "Endpoint operational",
+      "plan_requirement": "API Endpoints required",
+      "timestamp": "2025-08-28T18:14:30.323847"
+    },
+    {
+      "category": "API Endpoints",
+      "feature": "Templates API",
+      "status": "pass",
+      "details": "Endpoint operational",
+      "plan_requirement": "API Endpoints required",
+      "timestamp": "2025-08-28T18:14:30.324847"
+    },
+    {
+      "category": "API Endpoints",
+      "feature": "User Ideas API",
+      "status": "pass",
+      "details": "Endpoint operational",
+      "plan_requirement": "API Endpoints required",
+      "timestamp": "2025-08-28T18:14:30.325776"
+    },
+    {
+      "category": "API Endpoints",
+      "feature": "Overall API Compliance",
+      "status": "pass",
+      "details": "100.0% of APIs operational",
+      "plan_requirement": "RESTful API for data, indicators, moving averages, volatility, etc.",
+      "timestamp": "2025-08-28T18:14:30.325788"
+    },
+    {
+      "category": "Technical Stack",
+      "feature": "Python Backend with FastAPI",
+      "status": "pass",
+      "details": "FastAPI backend operational",
+      "plan_requirement": "Backend: Python with yfinance, Backtrader, FastAPI/Flask",
+      "timestamp": "2025-08-28T18:14:30.326757"
+    },
+    {
+      "category": "Technical Stack",
+      "feature": "React Frontend with SSE",
+      "status": "pass",
+      "details": "React frontend operational",
+      "plan_requirement": "Frontend: React with real-time streaming (SSE), interactive forms",
+      "timestamp": "2025-08-28T18:14:30.331908"
+    },
+    {
+      "category": "Pricing Tiers",
+      "feature": "Free Tier - Ideas Tracking",
+      "status": "pass",
+      "details": "2 ideas remaining",
+      "plan_requirement": "Test (Free): 3 ideas/month, basic analytics, GPT-4o/mini models",
+      "timestamp": "2025-08-28T18:14:30.333448"
+    }
+  ],
+  "timestamp": "2025-08-28T18:14:30.333531"
+}

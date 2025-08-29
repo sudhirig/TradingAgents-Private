@@ -19,4 +19,6 @@ DEFAULT_CONFIG = {
     "max_recur_limit": 100,
     # Tool settings
     "online_tools": True,
+    # Finnhub API settings
+    "finnhub_api_key": "d075eihr01qrslhm8e30d075eihr01qrslhm8e3g",
 }

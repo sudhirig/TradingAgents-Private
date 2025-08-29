@@ -1,0 +1,65 @@
+[
+  {
+    "test": "Server Health Check",
+    "success": true,
+    "message": "Backend server is running",
+    "timestamp": "2025-08-29T20:01:55.521621",
+    "data": null
+  },
+  {
+    "test": "Strategy Generation",
+    "success": false,
+    "message": "Invalid response format",
+    "timestamp": "2025-08-29T20:01:55.527152",
+    "data": null
+  },
+  {
+    "test": "Basic Backtest",
+    "success": false,
+    "message": "No results in response",
+    "timestamp": "2025-08-29T20:02:04.972245",
+    "data": null
+  },
+  {
+    "test": "Advanced Backtest",
+    "success": false,
+    "message": "HTTP 422: {\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"code\"],\"msg\":\"Field required\",\"input\":{\"strategy_code\":\"\\nfrom advanced_backtest_engine import EnhancedStrategy\\nimport backtrader as bt\\n\\nclass AdvancedTestStrategy(EnhancedStrategy):\\n    params = (\\n        ('sma_period', 20),\\n        ('rsi_period', 14),\\n    )\\n    \\n    def __init__(self):\\n        super().__init__()\\n        self.sma = bt.indicators.SMA(period=self.params.sma_period)\\n        self.rsi = bt.indicators.RSI(period=self.params.rsi_period)\\n        \\n    def next(self):\\n        if (self.data.close[0] > self.sma[0] and \\n            self.rsi[0] < 70 and not self.position):\\n            self.place_order('BUY', size=100)\\n        elif (self.data.close[0] < self.sma[0] or \\n              self.rsi[0] > 80) and self.position:\\n            self.place_order('SELL', size=self.position.size)\\n\",\"symbol\":\"AAPL\",\"start_date\":\"2023-01-01\",\"end_date\":\"2023-06-30\",\"initial_capital\":100000,\"position_sizing\":\"percentage\",\"risk_per_trade\":0.02},\"url\":\"https://errors.pydantic.dev/2.5/v/missing\"}]}",
+    "timestamp": "2025-08-29T20:02:05.983792",
+    "data": null
+  },
+  {
+    "test": "Technical Indicators",
+    "success": false,
+    "message": "HTTP 405: {\"detail\":\"Method Not Allowed\"}",
+    "timestamp": "2025-08-29T20:02:06.993033",
+    "data": null
+  },
+  {
+    "test": "Performance Metrics",
+    "success": false,
+    "message": "HTTP 404: {\"detail\":\"Not Found\"}",
+    "timestamp": "2025-08-29T20:02:08.003004",
+    "data": null
+  },
+  {
+    "test": "Error Handling - Invalid Strategy Code",
+    "success": false,
+    "message": "Should have returned error status",
+    "timestamp": "2025-08-29T20:02:13.781631",
+    "data": null
+  },
+  {
+    "test": "Error Handling - Invalid Symbol",
+    "success": false,
+    "message": "Should have returned error status",
+    "timestamp": "2025-08-29T20:02:18.679780",
+    "data": null
+  },
+  {
+    "test": "Error Handling - Missing Required Fields",
+    "success": false,
+    "message": "Should have returned error status",
+    "timestamp": "2025-08-29T20:02:18.681750",
+    "data": null
+  }
+]

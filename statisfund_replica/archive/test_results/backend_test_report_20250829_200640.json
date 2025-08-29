@@ -1,0 +1,65 @@
+[
+  {
+    "test": "Server Health Check",
+    "success": true,
+    "message": "Backend server is running",
+    "timestamp": "2025-08-29T20:06:18.612761",
+    "data": null
+  },
+  {
+    "test": "Strategy Generation",
+    "success": true,
+    "message": "Rate limited - expected behavior",
+    "timestamp": "2025-08-29T20:06:18.614031",
+    "data": null
+  },
+  {
+    "test": "Basic Backtest",
+    "success": false,
+    "message": "No results in response",
+    "timestamp": "2025-08-29T20:06:25.211363",
+    "data": null
+  },
+  {
+    "test": "Advanced Backtest",
+    "success": true,
+    "message": "Sharpe: 0.00, Max DD: 0.00%",
+    "timestamp": "2025-08-29T20:06:26.275295",
+    "data": null
+  },
+  {
+    "test": "Technical Indicators (SPY)",
+    "success": true,
+    "message": "Retrieved 20 indicators",
+    "timestamp": "2025-08-29T20:06:27.285396",
+    "data": null
+  },
+  {
+    "test": "Performance Metrics",
+    "success": true,
+    "message": "Advanced indicators endpoint working",
+    "timestamp": "2025-08-29T20:06:28.293909",
+    "data": null
+  },
+  {
+    "test": "Error Handling - Invalid Strategy Code",
+    "success": false,
+    "message": "Should have returned error status",
+    "timestamp": "2025-08-29T20:06:34.777955",
+    "data": null
+  },
+  {
+    "test": "Error Handling - Invalid Symbol",
+    "success": false,
+    "message": "Should have returned error status",
+    "timestamp": "2025-08-29T20:06:39.584892",
+    "data": null
+  },
+  {
+    "test": "Error Handling - Missing Required Fields",
+    "success": false,
+    "message": "Should have returned error status",
+    "timestamp": "2025-08-29T20:06:39.588426",
+    "data": null
+  }
+]

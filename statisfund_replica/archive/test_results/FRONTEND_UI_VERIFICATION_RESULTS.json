@@ -1,0 +1,124 @@
+{
+  "summary": {
+    "total_tests": 19,
+    "passed_tests": 17,
+    "success_rate": "89.5%",
+    "timestamp": "2025-08-29T18:55:32.595108"
+  },
+  "detailed_results": [
+    {
+      "test_name": "CORS Configuration",
+      "status": "PASS",
+      "timestamp": "2025-08-29T18:55:12.874763",
+      "details": "CORS allows frontend origin: http://localhost:3000"
+    },
+    {
+      "test_name": "UI Endpoint Backend Health",
+      "status": "PASS",
+      "timestamp": "2025-08-29T18:55:12.876036",
+      "details": "Returns valid JSON structure"
+    },
+    {
+      "test_name": "UI Endpoint Strategy Generation",
+      "status": "FAIL",
+      "timestamp": "2025-08-29T18:55:12.877323",
+      "details": "Contains error: "
+    },
+    {
+      "test_name": "UI Endpoint Backtesting Engine",
+      "status": "FAIL",
+      "timestamp": "2025-08-29T18:55:16.823038",
+      "details": "Contains error: Unable to download market data for AAPL. Yahoo Finance API is currently experiencing issues or rate limiting. Please try again later or use a different symbol."
+    },
+    {
+      "test_name": "UI Endpoint Technical Indicators",
+      "status": "PASS",
+      "timestamp": "2025-08-29T18:55:16.826662",
+      "details": "Returns valid JSON structure"
+    },
+    {
+      "test_name": "UI Endpoint Market Data",
+      "status": "PASS",
+      "timestamp": "2025-08-29T18:55:16.828884",
+      "details": "Returns valid JSON structure"
+    },
+    {
+      "test_name": "UI Endpoint Strategy Management",
+      "status": "PASS",
+      "timestamp": "2025-08-29T18:55:16.830528",
+      "details": "Returns list data"
+    },
+    {
+      "test_name": "UI Endpoint Advanced Indicators",
+      "status": "PASS",
+      "timestamp": "2025-08-29T18:55:16.832452",
+      "details": "Returns valid JSON structure"
+    },
+    {
+      "test_name": "UI Endpoint Order Types",
+      "status": "PASS",
+      "timestamp": "2025-08-29T18:55:16.833856",
+      "details": "Returns valid JSON structure"
+    },
+    {
+      "test_name": "UI Endpoint Asset Classes",
+      "status": "PASS",
+      "timestamp": "2025-08-29T18:55:16.835184",
+      "details": "Returns valid JSON structure"
+    },
+    {
+      "test_name": "UI Endpoint Broker Integration",
+      "status": "PASS",
+      "timestamp": "2025-08-29T18:55:16.836413",
+      "details": "Returns valid JSON structure"
+    },
+    {
+      "test_name": "Beginner User - Simple Request",
+      "status": "PASS",
+      "timestamp": "2025-08-29T18:55:16.837825",
+      "details": "API responding (may be rate limited)"
+    },
+    {
+      "test_name": "Advanced User - Technical Strategy",
+      "status": "PASS",
+      "timestamp": "2025-08-29T18:55:16.839045",
+      "details": "API responding (may be rate limited)"
+    },
+    {
+      "test_name": "Professional User - Complex Strategy",
+      "status": "PASS",
+      "timestamp": "2025-08-29T18:55:16.840272",
+      "details": "API responding (may be rate limited)"
+    },
+    {
+      "test_name": "UI Backtest - Simple SMA Crossover",
+      "status": "PASS",
+      "timestamp": "2025-08-29T18:55:20.790168",
+      "details": "UI elements present (4/4)"
+    },
+    {
+      "test_name": "UI Backtest - RSI Mean Reversion",
+      "status": "PASS",
+      "timestamp": "2025-08-29T18:55:24.720425",
+      "details": "UI elements present (4/4)"
+    },
+    {
+      "test_name": "UI Error - Invalid Strategy Code",
+      "status": "PASS",
+      "timestamp": "2025-08-29T18:55:28.644294",
+      "details": "Returns success:false for invalid input"
+    },
+    {
+      "test_name": "UI Error - Empty Strategy Description",
+      "status": "PASS",
+      "timestamp": "2025-08-29T18:55:28.647623",
+      "details": "Returns success:false for invalid input"
+    },
+    {
+      "test_name": "UI Error - Invalid Date Range",
+      "status": "PASS",
+      "timestamp": "2025-08-29T18:55:32.593270",
+      "details": "Returns success:false for invalid input"
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "timestamp": "2025-08-28T20:14:17+05:30",
+  "data_loading": {
+    "SPY": {
+      "status": "SUCCESS",
+      "rows": 260,
+      "date_range": "2023-01-02 to 2023-12-29",
+      "columns": [
+        "Open",
+        "High",
+        "Low",
+        "Close",
+        "Volume"
+      ],
+      "sample_close": 514.5
+    },
+    "AAPL": {
+      "status": "SUCCESS",
+      "rows": 260,
+      "date_range": "2023-01-02 to 2023-12-29",
+      "columns": [
+        "Open",
+        "High",
+        "Low",
+        "Close",
+        "Volume"
+      ],
+      "sample_close": 201.5
+    },
+    "MSFT": {
+      "status": "SUCCESS",
+      "rows": 260,
+      "date_range": "2023-01-02 to 2023-12-29",
+      "columns": [
+        "Open",
+        "High",
+        "Low",
+        "Close",
+        "Volume"
+      ],
+      "sample_close": 124.98
+    },
+    "TSLA": {
+      "status": "SUCCESS",
+      "rows": 260,
+      "date_range": "2023-01-02 to 2023-12-29",
+      "columns": [
+        "Open",
+        "High",
+        "Low",
+        "Close",
+        "Volume"
+      ],
+      "sample_close": 170.5
+    },
+    "GOOGL": {
+      "status": "SUCCESS",
+      "rows": 260,
+      "date_range": "2023-01-02 to 2023-12-29",
+      "columns": [
+        "Open",
+        "High",
+        "Low",
+        "Close",
+        "Volume"
+      ],
+      "sample_close": 155.87
+    },
+    "NVDA": {
+      "status": "SUCCESS",
+      "rows": 260,
+      "date_range": "2023-01-02 to 2023-12-29",
+      "columns": [
+        "Open",
+        "High",
+        "Low",
+        "Close",
+        "Volume"
+      ],
+      "sample_close": 136.65
+    },
+    "INVALID": {
+      "status": "SUCCESS",
+      "rows": 260,
+      "date_range": "2023-01-02 to 2023-12-29",
+      "columns": [
+        "Open",
+        "High",
+        "Low",
+        "Close",
+        "Volume"
+      ],
+      "sample_close": 242.14
+    },
+    "RELIANCE.NS": {
+      "status": "SUCCESS",
+      "rows": 260,
+      "date_range": "2023-01-02 to 2023-12-29",
+      "columns": [
+        "Open",
+        "High",
+        "Low",
+        "Close",
+        "Volume"
+      ],
+      "sample_close": 3396.74
+    },
+    "TCS.NS": {
+      "status": "SUCCESS",
+      "rows": 260,
+      "date_range": "2023-01-02 to 2023-12-29",
+      "columns": [
+        "Open",
+        "High",
+        "Low",
+        "Close",
+        "Volume"
+      ],
+      "sample_close": 3185.46
+    }
+  },
+  "backtesting": {
+    "SPY": {
+      "status": "ERROR",
+      "error": "'initial_cash'"
+    },
+    "AAPL": {
+      "status": "ERROR",
+      "error": "'initial_cash'"
+    },
+    "MSFT": {
+      "status": "ERROR",
+      "error": "'initial_cash'"
+    }
+  },
+  "summary": {
+    "data_success_rate": 1.0,
+    "backtest_success_rate": 0.0,
+    "overall_status": "FAIL"
+  }
+}

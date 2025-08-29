@@ -1,0 +1,148 @@
+{
+  "summary": {
+    "total_tests": 15,
+    "passed_tests": 7,
+    "failed_tests": 8,
+    "success_rate": "46.7%",
+    "duration_seconds": 20.3,
+    "timestamp": "2025-08-29T18:56:10.756606"
+  },
+  "failed_tests": [
+    "YFinance Direct Access",
+    "Strategy Generation Test 1",
+    "Strategy Generation Test 2",
+    "Strategy Generation Test 3",
+    "Backtest - AAPL",
+    "Backtest - MSFT",
+    "Backtest - GOOGL",
+    "Backtest - TSLA"
+  ],
+  "detailed_results": [
+    {
+      "test_name": "Backend Health Check",
+      "status": "PASS",
+      "timestamp": "2025-08-29T18:55:50.495581",
+      "details": {
+        "status": "healthy",
+        "timestamp": "2025-08-29T18:55:50.495056"
+      }
+    },
+    {
+      "test_name": "YFinance Direct Access",
+      "status": "FAIL",
+      "timestamp": "2025-08-29T18:55:52.220973",
+      "details": "No data returned from yfinance"
+    },
+    {
+      "test_name": "Strategy Generation Test 1",
+      "status": "FAIL",
+      "timestamp": "2025-08-29T18:55:52.224416",
+      "details": "No code generated"
+    },
+    {
+      "test_name": "Strategy Generation Test 2",
+      "status": "FAIL",
+      "timestamp": "2025-08-29T18:55:52.227197",
+      "details": "No code generated"
+    },
+    {
+      "test_name": "Strategy Generation Test 3",
+      "status": "FAIL",
+      "timestamp": "2025-08-29T18:55:52.229257",
+      "details": "No code generated"
+    },
+    {
+      "test_name": "Backtest - AAPL",
+      "status": "FAIL",
+      "timestamp": "2025-08-29T18:55:57.374308",
+      "details": {
+        "symbol": "AAPL",
+        "missing_elements": {
+          "results": true,
+          "financial_data": true,
+          "metrics": true
+        }
+      }
+    },
+    {
+      "test_name": "Backtest - MSFT",
+      "status": "FAIL",
+      "timestamp": "2025-08-29T18:56:02.002652",
+      "details": {
+        "symbol": "MSFT",
+        "missing_elements": {
+          "results": true,
+          "financial_data": true,
+          "metrics": true
+        }
+      }
+    },
+    {
+      "test_name": "Backtest - GOOGL",
+      "status": "FAIL",
+      "timestamp": "2025-08-29T18:56:06.589949",
+      "details": {
+        "symbol": "GOOGL",
+        "missing_elements": {
+          "results": true,
+          "financial_data": true,
+          "metrics": true
+        }
+      }
+    },
+    {
+      "test_name": "Backtest - TSLA",
+      "status": "FAIL",
+      "timestamp": "2025-08-29T18:56:10.745432",
+      "details": {
+        "symbol": "TSLA",
+        "missing_elements": {
+          "results": true,
+          "financial_data": true,
+          "metrics": true
+        }
+      }
+    },
+    {
+      "test_name": "Market Data Real-Time",
+      "status": "PASS",
+      "timestamp": "2025-08-29T18:56:10.748053",
+      "details": {
+        "has_indices": true,
+        "has_stocks": true,
+        "has_prices": true,
+        "data_source": "yfinance + Alpha Vantage fallback"
+      }
+    },
+    {
+      "test_name": "Basic Indicators List",
+      "status": "PASS",
+      "timestamp": "2025-08-29T18:56:10.750049",
+      "details": "Found 20 indicators"
+    },
+    {
+      "test_name": "Advanced Indicators",
+      "status": "PASS",
+      "timestamp": "2025-08-29T18:56:10.751873",
+      "details": "Found 42 advanced indicators"
+    },
+    {
+      "test_name": "Order Types",
+      "status": "PASS",
+      "timestamp": "2025-08-29T18:56:10.753341",
+      "details": "Endpoint active: /api/orders/types"
+    },
+    {
+      "test_name": "Asset Classes",
+      "status": "PASS",
+      "timestamp": "2025-08-29T18:56:10.754846",
+      "details": "Endpoint active: /api/assets/supported"
+    },
+    {
+      "test_name": "Broker Integrations",
+      "status": "PASS",
+      "timestamp": "2025-08-29T18:56:10.756529",
+      "details": "Endpoint active: /api/trading/brokers"
+    }
+  ]
+}

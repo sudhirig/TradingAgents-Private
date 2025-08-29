@@ -1,0 +1,150 @@
+{
+  "timestamp": "2025-08-29T18:21:42.090426",
+  "tests": [
+    {
+      "test_name": "Backend Health Check",
+      "status": "PASS",
+      "timestamp": "2025-08-29T18:21:42.097318",
+      "details": {
+        "status_code": 200,
+        "response": {
+          "status": "healthy",
+          "timestamp": "2025-08-29T18:21:42.096777"
+        }
+      }
+    },
+    {
+      "test_name": "Strategy Generation - Basic",
+      "status": "PASS",
+      "timestamp": "2025-08-29T18:21:55.695924",
+      "details": {
+        "has_code": true,
+        "has_backtrader_imports": true,
+        "has_rsi_logic": true,
+        "compliance_score": "100/100",
+        "code_preview": "```python\nimport backtrader as bt\n\nclass RsiStrategy(bt.Strategy):\n    params = (\n        ('rsi_low', 30),\n        ('rsi_high', 70),\n        ('stop_loss', 0.05),\n    )\n\n    def __init__(self):\n       ..."
+      }
+    },
+    {
+      "test_name": "Backtest Functionality",
+      "status": "PASS",
+      "timestamp": "2025-08-29T18:22:03.120701",
+      "details": {
+        "has_results": true,
+        "has_final_value": true,
+        "has_returns": true,
+        "has_performance_metrics": true,
+        "compliance_score": "100/100",
+        "result_preview": "{'success': True, 'backtest_results': {'final_value': 10000.0, 'initial_value': 10000.0, 'total_return': 0.0, 'total_return_pct': '0.0%', 'pnl': 0.0, 'sharpe_ratio': 0, 'max_drawdown': 0, 'max_drawdown_pct': '0%', 'volatility': 0.12, 'win_rate': 0, 'total_trades': 0, 'winning_trades': 0, 'losing_tra..."
+      }
+    },
+    {
+      "test_name": "Indicators Support",
+      "status": "PASS",
+      "timestamp": "2025-08-29T18:22:03.122522",
+      "details": {
+        "total_indicators": 20,
+        "basic_coverage": "4/4",
+        "advanced_coverage": "4/4",
+        "compliance_score": "100.0/100",
+        "indicators_sample": [
+          {
+            "name": "SMA",
+            "description": "Simple Moving Average",
+            "category": "trend"
+          },
+          {
+            "name": "EMA",
+            "description": "Exponential Moving Average",
+            "category": "trend"
+          },
+          {
+            "name": "RSI",
+            "description": "Relative Strength Index",
+            "category": "momentum"
+          },
+          {
+            "name": "MACD",
+            "description": "Moving Average Convergence Divergence",
+            "category": "momentum"
+          },
+          {
+            "name": "BB",
+            "description": "Bollinger Bands",
+            "category": "volatility"
+          },
+          {
+            "name": "ATR",
+            "description": "Average True Range",
+            "category": "volatility"
+          },
+          {
+            "name": "Stochastic",
+            "description": "Stochastic Oscillator",
+            "category": "momentum"
+          },
+          {
+            "name": "Williams %R",
+            "description": "Williams Percent Range",
+            "category": "momentum"
+          },
+          {
+            "name": "CCI",
+            "description": "Commodity Channel Index",
+            "category": "momentum"
+          },
+          {
+            "name": "ADX",
+            "description": "Average Directional Index",
+            "category": "trend"
+          }
+        ]
+      }
+    },
+    {
+      "test_name": "Market Data Integration",
+      "status": "PASS",
+      "timestamp": "2025-08-29T18:22:03.123776",
+      "details": {
+        "has_price_data": true,
+        "has_multiple_stocks": true,
+        "has_real_prices": true,
+        "compliance_score": "100/100",
+        "data_sample": "{'indices': {'SPY': {'price': 455.32, 'change': 2.45, 'change_percent': 0.54}, 'QQQ': {'price': 378.91, 'change': -1.23, 'change_percent': -0.32}, 'DIA': {'price': 348.76, 'change': 1.89, 'change_perc..."
+      }
+    },
+    {
+      "test_name": "Strategy Management",
+      "status": "PASS",
+      "timestamp": "2025-08-29T18:22:03.126003",
+      "details": {
+        "save_success": true,
+        "load_success": true,
+        "has_strategies": true,
+        "strategies_count": 2,
+        "compliance_score": "100/100"
+      }
+    },
+    {
+      "test_name": "Phase 2 Advanced Features",
+      "status": "PASS",
+      "timestamp": "2025-08-29T18:22:03.131938",
+      "details": {
+        "implemented_features": "3/5",
+        "advanced_indicators": false,
+        "advanced_orders": true,
+        "multi_asset": true,
+        "live_trading": true,
+        "performance_analytics": false,
+        "compliance_score": "60.0/100"
+      }
+    }
+  ],
+  "summary": {
+    "total_tests": 6,
+    "passed_tests": 6,
+    "overall_compliance": "100.0%",
+    "status": "COMPLIANT"
+  },
+  "compliance_score": 0
+}

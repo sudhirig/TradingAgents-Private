@@ -1,14 +1,32 @@
-# TradingAgents Web Frontend
+# 🤖 TradingAgents Web Frontend - Multi-Agent Analysis Platform
 
-A modern, real-time web interface for the TradingAgents analysis system, built with React, FastAPI, and WebSocket communication.
+A cutting-edge real-time web interface for the TradingAgents multi-agent financial analysis system. Built with modern technologies for professional trading analysis workflows.
 
-## 🚀 Features
+## ✨ Key Features
 
-- **Real-time Analysis**: Live WebSocket updates for agent status, messages, and reports
-- **Interactive Dashboard**: Modern UI with agent progress tracking and system metrics
-- **Performance Optimized**: Message batching, virtual scrolling, and memory management
-- **Security Hardened**: Rate limiting, input validation, and security headers
-- **Production Ready**: Docker deployment with comprehensive testing suite
+### 🔄 Real-time Multi-Agent Analysis
+- **12 Specialized Agents**: Market, Social, News, Fundamentals analysts + Research, Trading, Risk teams
+- **Live WebSocket Updates**: Real-time agent status, messages, and tool calls
+- **Team-based Workflow**: Sequential team execution (Analyst → Research → Trading → Risk → Portfolio)
+- **Progress Visualization**: Live agent status grid with animations and indicators
+
+### 📊 Interactive Dashboard
+- **Modern CLI-style Interface**: Professional terminal-inspired design
+- **System Metrics**: Real-time statistics and performance monitoring
+- **Message Feed**: Live filtering by type (info, success, warning, error)
+- **Tool Call Viewer**: Expandable details with parameter/result viewing
+
+### 🚀 Performance & Scalability
+- **Message Batching**: Efficient WebSocket communication with batching
+- **Virtual Scrolling**: Handle large message feeds efficiently
+- **Memory Management**: Automatic cleanup of old sessions and messages
+- **Auto-reconnection**: Robust WebSocket connection management
+
+### 🔒 Enterprise Security
+- **Rate Limiting**: Token bucket algorithm with endpoint-specific rules
+- **Input Validation**: Comprehensive sanitization of all inputs
+- **Security Headers**: CORS, CSP, and security middleware
+- **Session Management**: Secure session handling with timeouts
 
 ## 📋 Prerequisites
 
@@ -21,27 +39,50 @@ A modern, real-time web interface for the TradingAgents analysis system, built w
 
 ### Development Setup
 
-1. **Clone and Setup Environment**
+1. **Environment Configuration**
    ```bash
    cd /Users/Gautam/TradingAgents/web
+   
+   # Setup environment variables
    cp .env.example .env
-   # Edit .env with your API keys
+   # Edit .env with your API keys:
+   # OPENAI_API_KEY=your_openai_key
+   # ANTHROPIC_API_KEY=your_anthropic_key
+   # GROQ_API_KEY=your_groq_key
    ```
 
-2. **Start Backend**
+2. **Backend Setup & Start**
    ```bash
    cd backend
+   
+   # Install dependencies
    pip install -r requirements.txt
+   
+   # Start development server
    python -m app.main
-   # Backend runs on http://localhost:8003
+   # 🚀 Backend running on http://localhost:8001
+   # 📚 API docs at http://localhost:8001/docs
    ```
 
-3. **Start Frontend**
+3. **Frontend Setup & Start**
    ```bash
    cd frontend
+   
+   # Install dependencies
    npm install
+   
+   # Start development server
    npm run dev
-   # Frontend runs on http://localhost:5174
+   # 🚀 Frontend running on http://localhost:5173
+   ```
+
+4. **Verify Installation**
+   ```bash
+   # Test backend health
+   curl http://localhost:8001/health
+   
+   # Test WebSocket connection
+   # Open browser to http://localhost:5173 and start analysis
    ```
 
 ### Docker Deployment

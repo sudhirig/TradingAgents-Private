@@ -72,3 +72,13 @@
 2025-08-28 03:58:13,271 - app.main - ERROR - ❌ Failed to setup routers: cannot import name 'AnalysisSessionResponse' from 'app.models.analysis' (/Users/Gautam/TradingAgents/web/backend/app/models/analysis.py)
 2025-08-28 03:58:13,271 - app.main - INFO - 🚀 Starting TradingAgents Web Backend
 2025-08-28 03:58:13,271 - app.main - INFO - ✅ Environment variables loaded
+2025-08-28 13:23:38,528 - app.main - INFO - ✅ API routers configured
+2025-08-28 13:23:38,529 - app.main - INFO - 🚀 Starting TradingAgents Web Backend
+2025-08-28 13:23:38,529 - app.main - INFO - ✅ Environment variables loaded
+2025-08-28 13:23:48,364 - app.main - INFO - 📥 GET http://localhost:8003/health - Request ID: 45b6321a-4ac8-4ea7-a7c8-2a9ed51138ac
+2025-08-28 13:23:48,366 - app.main - INFO - 📤 GET http://localhost:8003/health - 200 - 0.002s - Request ID: 45b6321a-4ac8-4ea7-a7c8-2a9ed51138ac
+2025-08-28 13:23:53,912 - app.main - INFO - 📥 GET http://localhost:8003/api/config/analysts - Request ID: 6544c894-19d4-4418-93b5-fe3e9892a2fd
+2025-08-28 13:23:53,912 - app.main - INFO - 📤 GET http://localhost:8003/api/config/analysts - 200 - 0.001s - Request ID: 6544c894-19d4-4418-93b5-fe3e9892a2fd
+2025-08-28 13:23:58,566 - app.main - INFO - 📥 GET http://localhost:8003/ - Request ID: d582b2a5-63d5-425d-a44b-0f20dce1a2eb
+2025-08-28 13:23:58,568 - app.main - INFO - 📤 GET http://localhost:8003/ - 200 - 0.002s - Request ID: d582b2a5-63d5-425d-a44b-0f20dce1a2eb
+2025-08-28 13:52:10,631 - app.main - INFO - 🛑 Shutting down TradingAgents Web Backend
